@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import sinfoniaLogo from '@/assets/img/sinfonia-logo.svg?url'
+import sinfoniaLogoText from '@/assets/img/sinfonia-logo-text.svg?url'
+
 withDefaults(
 	defineProps<{
 		vertical?: boolean
@@ -23,7 +26,7 @@ withDefaults(
 				'mb-5 px-3.5': vertical,
 				'mr-9 w-15': !vertical,
 			}"
-			src="~/assets/img/sinfonia-logo.svg"
+			:src="sinfoniaLogo"
 			alt="Sinfonia Logo"
 			title="Sinfonia Logo"
 		/>
@@ -31,7 +34,7 @@ withDefaults(
 			:class="{
 				'w-24': !vertical,
 			}"
-			src="~/assets/img/sinfonia-logo-text.svg"
+			:src="sinfoniaLogoText"
 			alt="Sinfonia Text"
 			title="Sinfonia Text"
 		/>

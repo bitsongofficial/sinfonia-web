@@ -12,13 +12,24 @@ module.exports = {
 			spacing: {
 				7.5: '1.875rem', // 30px
 				11.5: '2.875rem', // 46px
+				13: '3.25rem', // 52px
 				15: '3.75rem', // 60px
 				26: '6.75rem', // 108px
 				33: '8.375rem', // 134px
+				45: '11.5rem', // 184px
 				95: '23.375rem', // 374px
+			},
+			borderRadius: {
+				'3xl': '1.875rem', // 30px
 			},
 			blur: {
 				full: '1000px',
+			},
+			backgroundImage: {
+				'custom-l-gradient': 'linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%)',
+			},
+			strokeWidth: {
+				3: '3px',
 			},
 		},
 		colors: {

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <linearGradient id="secondary-gradient" gradientTransform="rotate(176)">
+    <stop stop-color="#9C589C" />
+    <stop offset="1" stop-color="#FF005C" />
+  </linearGradient>
+  <symbol id="close" viewBox="0 0 24 24">
+    <path
+      d="M18.75 5.25L5.25 18.75"
+      stroke="inherit"
+      stroke-width="inherit"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <path
+      d="M18.75 18.75L5.25 5.25"
+      stroke="inherit"
+      stroke-width="inherit"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </symbol>
+  <symbol id="volume" viewBox="0 0 24 24" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round">
+    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+    <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 24 24">
+    <path d="M9 4.5L16.5 12L9 19.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="more-vertical" viewBox="0 0 24 24" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="1"></circle>
+    <circle cx="12" cy="5" r="1"></circle>
+    <circle cx="12" cy="19" r="1"></circle>
+  </symbol>
+</svg>
