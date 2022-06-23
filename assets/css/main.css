@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Circular Std", sans-serif;
+  }
+
+  h1 {
+    @apply text-4xl md:text-7xl;
+  }
+
+  h2 {
+    @apply text-2xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer utilities {
+  .bg-radial-gradient-white {
+    background: radial-gradient(18.81% 269.16% at 81.41% 195.58%, theme(colors.white) 0%, theme(colors.white / 0%) 100%),
+      radial-gradient(49.86% 319.81% at 28.6% 0%, theme(colors.white) 0%, theme(colors.white / 0%) 100%);
+  }
+
+  .text-radial-gradient-white {
+    @apply bg-radial-gradient-white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: theme(colors.transparent);
+    background-clip: text;
+    text-fill-color: theme(colors.transparent);
+  }
+}
