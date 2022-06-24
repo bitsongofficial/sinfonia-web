@@ -31,6 +31,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				'custom-l-gradient': 'linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%)',
+				'custom-l-text-gradient': 'linear-gradient(105deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 60.98%)',
 			},
 			strokeWidth: {
 				3: '3px',
@@ -47,16 +48,17 @@ module.exports = {
 			secondary: '#FF005C',
 			purple: '#9C589C',
 			purple2: '#B79BC1',
+			success: '#0AF9B1',
 		},
 		fontFamily: {
 			'circular-std': ['"Circular Std"', 'sans-serif'],
 		},
 		fontSize: {
 			xs: '.75rem',
-			sm: '.875rem', // 14px
-			tiny: '.875rem', // 14px
-			base: '1rem', // 16px
-			lg: '1.125rem', // 18px
+			sm: ['.875rem', '1.125rem'], // 14px
+			tiny: ['.875rem', '1.125rem'], // 14px
+			base: ['1rem', '1.25rem'], // 16px
+			lg: ['1.125rem', '1.5rem'], // 18px
 			p1: '1.25rem', // 20px
 			basexl: '1.5rem', // 24px
 			'1xl': '1.75rem', // 28px

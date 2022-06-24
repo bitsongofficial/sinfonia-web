@@ -38,11 +38,18 @@
     background: radial-gradient(100% 100% at 0% 0%,  theme(colors.white / 12%) 0%, theme(colors.white / 3%) 100%)
   }
 
-  .text-radial-gradient-white {
-    @apply bg-double-radial-gradient-white;
+  .text-gradient-base {
     -webkit-background-clip: text;
     -webkit-text-fill-color: theme(colors.transparent);
     background-clip: text;
     text-fill-color: theme(colors.transparent);
+  }
+
+  .text-radial-gradient-white {
+    @apply bg-double-radial-gradient-white text-gradient-base;
+  }
+
+  .text-l-gradient-secondary {
+    @apply bg-custom-l-text-gradient text-gradient-base;
   }
 }
