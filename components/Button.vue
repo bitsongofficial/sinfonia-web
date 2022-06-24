@@ -27,7 +27,7 @@ const anchorProps = computed(() => ({
 <template>
 	<component
 		:is="buttonType"
-		class="flex flex-row justify-center items-center w-45 h-13 hover:active:opacity-80 rounded-3xl text-white font-medium text-base capitalize bg-custom-l-gradient from-purple to-secondary"
+		class="flex flex-row justify-center items-center w-45 h-13 hover:active:opacity-80 rounded-4xl text-white font-medium text-base capitalize bg-custom-l-gradient from-purple to-secondary"
 		v-bind="anchorProps"
 		@click="$emit('click', $event)"
 	>

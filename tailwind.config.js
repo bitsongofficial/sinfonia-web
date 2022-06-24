@@ -14,13 +14,17 @@ module.exports = {
 				11.5: '2.875rem', // 46px
 				13: '3.25rem', // 52px
 				15: '3.75rem', // 60px
+				21: '5.375rem', // 86px
+				25: '6.5rem', // 104px
 				26: '6.75rem', // 108px
 				33: '8.375rem', // 134px
 				45: '11.5rem', // 184px
+				49: '12.125rem', // 194px
 				95: '23.375rem', // 374px
 			},
 			borderRadius: {
-				'3xl': '1.875rem', // 30px
+				medium: '1.25rem', // 20px
+				'4xl': '1.875rem', // 30px
 			},
 			blur: {
 				full: '1000px',
@@ -31,6 +35,9 @@ module.exports = {
 			strokeWidth: {
 				3: '3px',
 			},
+			dropShadow: {
+				'3xl': 'drop-shadow(0px 0px 20px rgba(20, 20, 46, 0.2))',
+			},
 		},
 		colors: {
 			transparent: 'transparent',
@@ -39,6 +46,7 @@ module.exports = {
 			primary: '#1B0929',
 			secondary: '#FF005C',
 			purple: '#9C589C',
+			purple2: '#B79BC1',
 		},
 		fontFamily: {
 			'circular-std': ['"Circular Std"', 'sans-serif'],
