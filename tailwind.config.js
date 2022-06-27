@@ -21,6 +21,7 @@ module.exports = {
 			white: '#FFFFFF',
 			primary: '#1B0929',
 			secondary: '#FF005C',
+			red: '#E7166C',
 			purple: '#9C589C',
 			purple2: '#B79BC1',
 			success: '#0AF9B1',
@@ -54,17 +55,29 @@ module.exports = {
 				5.5: '1.375rem', // 22px
 				6.5: '1.625rem', // 26px
 				7.5: '1.875rem', // 30px
+				10.5: '2.625rem', // 42px
 				11.5: '2.875rem', // 46px
 				13: '3.25rem', // 52px
 				15: '3.75rem', // 60px
+				18: '4.625rem', // 74px
 				21: '5.375rem', // 86px
+				24.5: '6.125rem', // 98px
 				25: '6.5rem', // 104px
 				26: '6.75rem', // 108px
+				29: '7.5rem', // 120px
 				33: '8.375rem', // 134px
+				34: '8.5rem', // 136px
+				35: '8.75rem', // 140px
+				39: '9.5rem', // 152px
 				43: '10.75rem', // 172px
 				45: '11.5rem', // 184px
 				49: '12.125rem', // 194px
+				59: '14.5rem', // 232px
+				71: '17.5rem', // 280px
 				95: '23.375rem', // 374px
+			},
+			width: {
+				'3/20': '15%',
 			},
 			borderRadius: {
 				medium: '1.25rem', // 20px
@@ -77,6 +90,8 @@ module.exports = {
 			backgroundImage: {
 				'custom-l-gradient': 'linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%)',
 				'custom-l-text-gradient': 'linear-gradient(105deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 60.98%)',
+				'custom-radial-gradient':
+					'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from) 72.92%, var(--tw-gradient-to) 100%)',
 			},
 			strokeWidth: {
 				3: '3px',

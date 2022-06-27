@@ -36,7 +36,8 @@ import adamToken from '@/assets/img/adam-token.png?url'
 			class="col-span-12 font-regular text-white/30 text-center text-tiny md:text-base lg:text-lg xl:text-basexl 2xl:text-1.5xl mt-10 lg:mt-14 xl:mt-16 2xl:mt-21"
 		>
 			Fan Tokens are the ultimate way to support the music and the acts you love AND get rewarded for it. Access VIP
-			experiences, exclusive previews, finance your own music projects<br />and have your say.
+			experiences, exclusive previews, finance your own music projects<br class="md:hidden" />
+			and have your say.
 		</p>
 	</div>
 </template>
