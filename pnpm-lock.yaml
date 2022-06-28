@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@nuxt/kit': 3.0.0-rc.4
   '@tailwindcss/forms': ^0.5.2
+  '@vee-validate/rules': ^4.5.11
   autoprefixer: ^10.4.7
   nuxt: 3.0.0-rc.4
   postcss: ^8.4.14
@@ -14,6 +15,7 @@ specifiers:
 
 dependencies:
   '@nuxt/kit': 3.0.0-rc.4
+  '@vee-validate/rules': 4.5.11
   swiper: 8.2.4
   vee-validate: 4.5.11
 
@@ -756,6 +758,10 @@ packages:
   /@types/tough-cookie/4.0.2:
     resolution: {integrity: sha512-Q5vtl1W5ue16D+nIaW8JWebSSraJVlK+EthKn7e7UcD4KWsaSJ8BqGPXNaPghgtcn/fhvrN17Tv8ksUsQpiplw==}
     dev: true
+
+  /@vee-validate/rules/4.5.11:
+    resolution: {integrity: sha512-aGwxjr/5/w8LFVObPB6UrqYt0oRlHHFw8/nxZHowY4LP62GWlAi+mAp1fb15Paav/c9rgV4iiqsNYarS1zpNQw==}
+    dev: false
 
   /@vercel/nft/0.20.0:
     resolution: {integrity: sha512-+lxsJP/sG4E8UkhfrJC6evkLLfUpZrjXxqEdunr3Q9kiECi8JYBGz6B5EpU1+MmeNnRoSphLcLh/1tI998ye4w==}

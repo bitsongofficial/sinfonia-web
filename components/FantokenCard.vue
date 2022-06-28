@@ -56,7 +56,7 @@ defineProps<{
 		<div class="flex flex-row items-center justify-between">
 			<h5 class="text-base md:text-tiny lg:text-base font-medium text-purple2/50 uppercase">variation</h5>
 
-			<p class="text-base md:text-tiny lg:text-base text-success">+ {{ variation }} $</p>
+			<p class="text-base md:text-tiny lg:text-base text-green">+ {{ variation }} $</p>
 		</div>
 	</Card>
 </template>

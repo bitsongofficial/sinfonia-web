@@ -31,6 +31,7 @@ const updateModelValue = (e: unknown) => {
 				@update:model-value="updateModelValue($event)"
 				@blur="handleBlur"
 				:id="name"
+				:name="name"
 				type="checkbox"
 				class="w-5 h-5 xl:w-5.5 xl:h-5.5 transition-all duration-300 peer cursor-pointer text-purple3 !bg-none bg-white/0 focus:bg-transparent checked:!bg-white rounded-md border border-solid border-white/30 hover:border-white checked:!border-white !ring-offset-1 !ring-transparent !ring-offset-transparent"
 			/>

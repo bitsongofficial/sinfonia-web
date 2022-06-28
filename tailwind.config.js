@@ -25,7 +25,9 @@ module.exports = {
 			purple: '#9C589C',
 			purple2: '#B79BC1',
 			purple3: '#250F31',
-			success: '#0AF9B1',
+			green: '#0AF9B1',
+			success: '#12A481',
+			error: '#DC004F',
 		},
 		fontFamily: {
 			'circular-std': ['"Circular Std"', 'sans-serif'],

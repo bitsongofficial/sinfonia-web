@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout>
 		<div class="container mx-auto px-7.5 md:px-10">
-			<section class="grid grid-cols-12 gap-x-2.5 md:gap-x-6">
+			<Grid>
 				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
 
 				<h1
@@ -32,22 +32,14 @@
 						/>
 					</template>
 				</Button>
-			</section>
-			<section class="grid grid-cols-12 gap-x-2.5 md:gap-x-6">
+			</Grid>
+			<Grid>
 				<FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" />
 
 				<FantokensPlayer class="col-span-12 md:col-span-11 md:col-start-2 mb-43 md:mb-34" />
-			</section>
-			<section class="grid grid-cols-12 gap-x-2.5 md:gap-x-6 mb-35 md:mb-28 lg:mb-35 xl:mb-64">
-				<h4
-					class="col-span-12 md:col-span-4 xl:col-span-3 md:!col-start-2 text-white font-medium text-center md:text-left mb-13"
-				>
-					Be the first on<br />
-					every new drop.
-				</h4>
 
-				<Checkbox class="col-span-9" name="newsletter-confirm" label="I agree to receive Bitsong Newsletter" />
-			</section>
+				<Newsletter class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
+			</Grid>
 		</div>
 	</NuxtLayout>
 </template>
