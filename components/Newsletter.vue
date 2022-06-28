@@ -27,7 +27,7 @@ const onSubmit = handleSubmit(() => {
 </script>
 
 <template>
-	<Grid>
+	<Grid tag="section">
 		<h4
 			class="col-span-12 md:col-span-4 xl:col-span-3 md:!col-start-2 text-white font-medium text-center md:text-left mb-13 md:mb-0"
 		>
@@ -44,7 +44,7 @@ const onSubmit = handleSubmit(() => {
 		</div>
 
 		<Button
-			class="w-full col-span-6 md:col-span-3 xl:col-span-2 2xl:col-span-3 col-start-4 md:col-start-7 xl:col-start-5 2xl:col-start-10 xl:ml-11.5 2xl:ml-16 mx-auto md:mx-0 md:max-w-mdbutton lg:max-w-lgbutton xl:max-w-xlbutton 2xl:max-w-2xlbutton mb-20 lg:mb-25 xl:mb-32 2xl:mb-49"
+			class="w-full col-span-6 md:col-span-3 xl:col-span-2 2xl:col-span-3 col-start-4 md:col-start-7 xl:col-start-5 2xl:col-start-10 xl:ml-11.5 2xl:ml-16 2xl:mb-auto mx-auto md:mx-0 md:max-w-mdbutton lg:max-w-lgbutton xl:max-w-xlbutton 2xl:max-w-2xlbutton"
 			@click="onSubmit"
 			:disabled="!meta.valid"
 		>

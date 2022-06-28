@@ -23,12 +23,12 @@ const breakpoints: {
 
 <template>
 	<section>
-		<div class="grid grid-cols-12 gap-x-2.5 gap-y-11.5 md:hidden">
+		<Grid class="gap-y-11.5 md:hidden">
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" playing class="col-span-4 col-start-2" />
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" class="col-span-4 col-end-12" />
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" class="col-span-4 col-start-2" />
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" class="col-span-4 col-end-12" />
-		</div>
+		</Grid>
 		<swiper
 			class="hidden md:block !overflow-visible"
 			slides-per-view="auto"

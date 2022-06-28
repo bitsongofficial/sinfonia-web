@@ -3,7 +3,7 @@ import adamToken from '@/assets/img/adam-token.png?url'
 </script>
 
 <template>
-	<div class="grid grid-cols-12 gap-x-6">
+	<Grid tag="section">
 		<FantokenCard
 			name="Adam Clay"
 			symbol="CLAY"
@@ -39,5 +39,5 @@ import adamToken from '@/assets/img/adam-token.png?url'
 			experiences, exclusive previews, finance your own music projects<br class="md:hidden" />
 			and have your say.
 		</p>
-	</div>
+	</Grid>
 </template>

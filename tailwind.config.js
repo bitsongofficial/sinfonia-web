@@ -46,7 +46,7 @@ module.exports = {
 			'3xl': ['2.25rem', '2.875rem'], // 36px
 			'4xl': ['2.5rem', '2.75rem'], // 40px
 			'5xl': '3rem', // 48px
-			'6xl': '3.25rem', // 52px
+			'6xl': ['3.25rem', '3.875rem'], // 52px
 			'7xl': ['4rem', '4.375rem'], // 64px
 			'8xl': ['5.125rem', '5.625rem'], // 82px
 			'9xl': ['6rem', '6.25rem'], // 96px
