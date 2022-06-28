@@ -31,4 +31,7 @@
     <circle cx="12" cy="5" r="1"></circle>
     <circle cx="12" cy="19" r="1"></circle>
   </symbol>
+  <svg id="check" viewBox="0 0 24 24" fill="none" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="20 6 9 17 4 12"></polyline>
+  </svg>
 </svg>

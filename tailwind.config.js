@@ -24,6 +24,7 @@ module.exports = {
 			red: '#E7166C',
 			purple: '#9C589C',
 			purple2: '#B79BC1',
+			purple3: '#250F31',
 			success: '#0AF9B1',
 		},
 		fontFamily: {
@@ -39,8 +40,8 @@ module.exports = {
 			basexl: ['1.5rem', '1.875rem'], // 24px
 			'1xl': ['1.75rem', '2rem'], // 28px
 			'1.5xl': '1.875rem', // 30px
-			'2xl': '2rem', // 32px
-			'3xl': '2.25rem', // 36px
+			'2xl': ['2rem', '2.5rem'], // 32px
+			'3xl': ['2.25rem', '2.875rem'], // 36px
 			'4xl': ['2.5rem', '2.75rem'], // 40px
 			'5xl': '3rem', // 48px
 			'6xl': '3.25rem', // 52px
@@ -101,5 +102,5 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [require('@tailwindcss/forms')],
 }

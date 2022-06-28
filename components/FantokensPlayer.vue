@@ -34,6 +34,7 @@ const breakpoints: {
 			slides-per-view="auto"
 			:space-between="80"
 			:breakpoints="breakpoints"
+			:grab-cursor="true"
 		>
 			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" playing :img="adamToken" />
