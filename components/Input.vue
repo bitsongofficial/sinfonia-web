@@ -33,7 +33,7 @@ const updateModelValue = (e: unknown) => {
 <template>
 	<div class="flex flex-col">
 		<input
-			class="text-base xl:text-basexl text-white placeholder:text-white/30 bg-transparent border-0 border-b border-b-white/30 focus:border-b-white pt-0 px-0 pb-3 xl:pb-4 !ring-offset-1 !ring-transparent !ring-offset-transparent"
+			class="text-base xl:text-basexl text-white placeholder:text-white/30 bg-transparent border-0 border-b border-b-white/30 focus:border-b-white pt-0 px-0 pb-3 xl:pb-6 !ring-offset-1 !ring-transparent !ring-offset-transparent"
 			v-model="value"
 			@update:model-value="updateModelValue($event)"
 			@blur="handleBlur"

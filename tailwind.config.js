@@ -82,6 +82,14 @@ module.exports = {
 			width: {
 				'3/20': '15%',
 			},
+			maxWidth: {
+				unset: 'unset',
+				mdbutton: '8.75rem', // 140px
+				lgbutton: '9.5rem', // 152px
+				xlbutton: '10.125rem', // 162px
+				'2xlbutton': '12.75rem', // 204px
+				lginput: '19.625rem', // 314px
+			},
 			borderRadius: {
 				medium: '1.25rem', // 20px
 				'4xl': '1.875rem', // 30px
