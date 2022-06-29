@@ -39,6 +39,7 @@ module.exports = {
 			base: ['1rem', '1.25rem'], // 16px
 			lg: ['1.125rem', '1.5rem'], // 18px
 			p1: ['1.25rem', '1.5rem'], // 20px
+			p2: ['1.3125rem', '1.75rem'], // 21px
 			basexl: ['1.5rem', '1.875rem'], // 24px
 			'1xl': ['1.75rem', '2rem'], // 28px
 			'1.5xl': '1.875rem', // 30px
@@ -58,11 +59,17 @@ module.exports = {
 				5.5: '1.375rem', // 22px
 				6.5: '1.625rem', // 26px
 				7.5: '1.875rem', // 30px
+				8.5: '2.125rem', // 34px
+				9.5: '2.375rem', // 38px
 				10.5: '2.625rem', // 42px
 				11.5: '2.875rem', // 46px
 				13: '3.25rem', // 52px
+				13.5: '3.375rem', // 54px
+				14.5: '3.625rem', // 58px
 				15: '3.75rem', // 60px
+				16.5: '4.375rem', // 70px
 				18: '4.625rem', // 74px
+				20.5: '5.125rem', // 82px
 				21: '5.375rem', // 86px
 				24.5: '6.125rem', // 98px
 				25: '6.5rem', // 104px
@@ -75,8 +82,10 @@ module.exports = {
 				43: '10.75rem', // 172px
 				45: '11.5rem', // 184px
 				49: '12.125rem', // 194px
+				55: '13.75rem', // 220px
 				59: '14.5rem', // 232px
 				71: '17.5rem', // 280px
+				71.5: '17.625rem', // 282px
 				95: '23.375rem', // 374px
 			},
 			width: {
@@ -84,6 +93,7 @@ module.exports = {
 			},
 			maxWidth: {
 				unset: 'unset',
+				basebadge: '6.375rem', // 102px
 				mdbutton: '8.75rem', // 140px
 				lgbutton: '9.5rem', // 152px
 				xlbutton: '10.125rem', // 162px

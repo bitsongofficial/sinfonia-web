@@ -1,23 +1,21 @@
 <template>
 	<NuxtLayout>
-		<div class="container mx-auto px-7.5 md:px-10">
+		<div class="container mx-auto px-7.5 md:px-10 lg:px-14">
 			<Grid>
 				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
 
 				<h1
 					class="col-span-12 lg:col-span-10 lg:col-start-2 font-bold text-center text-radial-gradient-white mb-6 md:mb-8 xl:mb-11.5"
 				>
-					Sinfonia tune<br />into Richer<br class="md:hidden" />
-					Fan Exp
+					Music Industry has<br class="hidden md:inline" />
+					arrived in Web 3.0
 				</h1>
 
 				<p
 					class="col-span-12 lg:col-span-10 lg:col-start-2 font-regular text-white/30 text-center mb-14 md:mb-8 lg:mb-16 xl:mb-32 2xl:mb-20"
 				>
-					Fan Tokens are the ultimate way<br class="md:hidden" />
-					to support the music and the acts<br class="xl:hidden" />
-					you love<br class="hidden xl:inline 2xl:hidden" />
-					and get rewarded for it.
+					The Fan Token Platform built to enrich the Artists and Fans Relationship.<br />
+					Loyalty is what you always deserved.
 				</p>
 
 				<Button
@@ -41,6 +39,8 @@
 				<Newsletter class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
 
 				<DefiSection class="col-span-12 mb-29 md:mb-32 lg:mb-35 xl:mb-40 2xl:mb-49" />
+
+				<ListingSection class="col-span-12 mb-29 md:mb-32 lg:mb-29 xl:mb-55 2xl:mb-71.5" />
 			</Grid>
 		</div>
 	</NuxtLayout>

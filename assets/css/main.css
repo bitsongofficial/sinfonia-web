@@ -56,4 +56,18 @@
   .text-l-gradient-secondary {
     @apply bg-custom-l-text-gradient text-gradient-base;
   }
+
+  .mask-composite-exlude {
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+  }
+
+  .mask-custom-l-gradient {
+    mask: linear-gradient(theme(colors.white) 0 0) padding-box, linear-gradient(theme(colors.white) 0 0);
+    -webkit-mask: linear-gradient(theme(colors.white) 0 0) padding-box, linear-gradient(theme(colors.white) 0 0);
+  }
+
+  .full-bg-custom-l-gradient {
+    background: linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%) border-box;
+  }
 }
