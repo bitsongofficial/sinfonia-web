@@ -20,7 +20,7 @@
 
 				<Button
 					class="col-span-8 md:col-span-4 col-start-3 md:col-start-5 mx-auto mb-20 lg:mb-25 xl:mb-32 2xl:mb-49"
-					href="#"
+					href="https://app.sinfonia.zone"
 				>
 					launch app
 					<template #right>
@@ -41,6 +41,27 @@
 				<DefiSection class="col-span-12 mb-29 md:mb-32 lg:mb-35 xl:mb-40 2xl:mb-49" />
 
 				<ListingSection class="col-span-12 mb-29 md:mb-32 lg:mb-29 xl:mb-55 2xl:mb-71.5" />
+
+				<SwapSection class="col-span-12 mb-29 md:mb-32 lg:mb-29 xl:mb-55 2xl:mb-71.5" />
+
+				<PoolsSection class="col-span-12 mb-20 xl:mb-32" />
+
+				<Button
+					class="col-span-8 md:col-span-4 col-start-3 md:col-start-5 mx-auto mb-35 md:mb-32 lg:mb-35 xl:mb-71 2xl:mb-59"
+					href="https://app.sinfonia.zone"
+				>
+					launch app
+					<template #right>
+						<Icon
+							class="w-4 h-4 xl:w-4.5 xl:h-4.5 2xl:w-6 2xl:h-6 fill-transparent stroke-white stroke-3"
+							name="chevron-right"
+						/>
+					</template>
+				</Button>
+
+				<UseCasesSection class="col-span-12" />
+
+				<PartnersSection class="col-span-12 mb-40 md:mb-44 lg:mb-52 xl:mb-64 2xl:mb-96" />
 			</Grid>
 		</div>
 	</NuxtLayout>
