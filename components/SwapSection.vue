@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+import swap from '@/assets/img/swap.svg?url'
+</script>
+
 <template>
 	<Grid>
 		<div
@@ -20,8 +24,10 @@
 			</p>
 		</div>
 
-		<ListingCard
+		<div
 			class="col-span-12 md:col-span-8 xl:col-span-5 md:col-start-3 xl:row-start-1 xl:col-start-7 lg:mx-7 xl:mx-0 2xl:mr-11.5"
-		/>
+		>
+			<img :src="swap" alt="Swap Component" title="Swap Component" />
+		</div>
 	</Grid>
 </template>
