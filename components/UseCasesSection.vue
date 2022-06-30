@@ -1,5 +1,89 @@
 <script lang="ts" setup>
-const useCases = ['Pools', 'Tickets', 'Merch', 'Memorabilia']
+import { SwiperOptions } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/vue'
+
+import 'swiper/css'
+
+const useCases = [
+	{
+		title: 'Polls',
+		subtitle:
+			"Participate in your favorite Artists' decisions about their private or musical lives by answering simple surveys.",
+		label: 'Q2 2022',
+		icon: 'chart-bar',
+	},
+	{
+		title: 'Tickets',
+		subtitle: 'Purchase tickets for concerts and events.',
+		label: 'Q2 2022',
+		icon: 'ticket',
+	},
+	{
+		title: 'Merch',
+		subtitle: 'Brand new merchandise of your Artists, Labels, Clubs, Festivals and Radio.',
+		label: 'Q2 2022',
+		icon: 't-shirt',
+	},
+	{
+		title: 'Memorabilia',
+		subtitle: 'Exclusive collectibles , coming directly from your favorite Artists.',
+		label: 'Q2 2022',
+		icon: 'music-note',
+	},
+	{
+		title: 'Group session',
+		subtitle: 'Talk freely with your favorite artist, discover  his life, curiosities and passions.',
+		label: 'Q2 2022',
+		icon: 'users',
+	},
+	{
+		title: 'Exclusive contents',
+		subtitle:
+			'Receive exclusive unreleased tracks, promo, customized videos and much more from your favourite Artist & Labels.',
+		label: 'Q2 2022',
+		icon: 'lock',
+	},
+	{
+		title: 'Collaborate w/ your Artist',
+		subtitle: 'Artists or Record Labels may need your support! Establish collaborations with them.',
+		label: 'Q2 2022',
+		icon: 'microphone',
+	},
+	{
+		title: 'Masterclass',
+		subtitle: 'Take classes directly from leading musical exponents.',
+		label: 'Q2 2022',
+		icon: 'binoculars',
+	},
+	{
+		title: 'Exclusive streamings',
+		subtitle: 'Private sessions or Dj sets to celebrate your events with your favorite music.',
+		label: 'Q2 2022',
+		icon: 'monitor-play',
+	},
+	{
+		title: 'NFTs',
+		subtitle: 'Collects unique works of art. Issue autographs and signed photographs, gig tickets and much more',
+		label: 'Q2 2022',
+		icon: 'sketch',
+	},
+]
+
+const breakpoints: {
+	[width: number]: SwiperOptions
+	[ratio: string]: SwiperOptions
+} = {
+	768: {
+		slidesPerView: 2,
+		centeredSlides: false,
+		centeredSlidesBounds: false,
+	},
+	1024: {
+		slidesPerView: 3,
+		centeredSlides: false,
+		centeredSlidesBounds: false,
+	},
+}
 </script>
 
 <template>
@@ -11,27 +95,25 @@ const useCases = ['Pools', 'Tickets', 'Merch', 'Memorabilia']
 			You can have much more
 		</h2>
 
-		<div class="col-span-12 group relative flex overflow-x-visible">
-			<div class="animate-marquee group-hover:pause whitespace-nowrap flex flex-nowrap">
-				<div class="flex flex-row" v-for="(useCase, index) in useCases" :key="index">
-					<h3
-						class="text-5.5xl md:text-9.5xl font-bold text-center text-radial-gradient-white hover:bg-white opacity-10 hover:opacity-100 transition-all duration-300 cursor-pointer"
-					>
-						{{ useCase }}
-					</h3>
-					<h3 class="text-5.5xl md:text-9.5xl font-bold text-center text-radial-gradient-white opacity-10 mx-5">/</h3>
-				</div>
-			</div>
-			<div class="absolute top-0 animate-marquee2 group-hover:pause whitespace-nowrap flex flex-nowrap">
-				<div class="flex flex-row" v-for="(useCase, index) in useCases" :key="index">
-					<h3
-						class="text-5.5xl md:text-9.5xl font-bold text-center text-radial-gradient-white hover:bg-white opacity-10 hover:opacity-100 transition-all duration-300 cursor-pointer"
-					>
-						{{ useCase }}
-					</h3>
-					<h3 class="text-5.5xl md:text-9.5xl font-bold text-center text-radial-gradient-white opacity-10 mx-5">/</h3>
-				</div>
-			</div>
+		<div class="col-span-12 xl:hidden">
+			<swiper
+				class="!overflow-visible"
+				:slides-per-view="1.02"
+				:space-between="24"
+				:grab-cursor="true"
+				:auto-height="true"
+				:centered-slides="true"
+				:centered-slides-bounds="true"
+				:breakpoints="breakpoints"
+			>
+				<swiper-slide v-for="(useCase, index) in useCases" :key="index" class="!h-full">
+					<UseCaseCard v-bind="useCase" class="h-full" />
+				</swiper-slide>
+			</swiper>
+		</div>
+
+		<div class="hidden xl:grid grid-cols-12 gap-7.5 col-span-12 auto-rows-fr">
+			<UseCaseCard v-for="(useCase, index) in useCases" :key="index" v-bind="useCase" class="col-span-4" />
 		</div>
 	</Grid>
 </template>

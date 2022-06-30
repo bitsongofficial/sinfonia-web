@@ -100,6 +100,9 @@ module.exports = {
 				'3/20': '15%',
 				500: '31.25rem', // 500px
 			},
+			minWidth: {
+				6: '1.5rem',
+			},
 			maxWidth: {
 				unset: 'unset',
 				basebadge: '6.375rem', // 102px
@@ -128,6 +131,9 @@ module.exports = {
 			},
 			dropShadow: {
 				'3xl': 'drop-shadow(0px 0px 20px rgba(20, 20, 46, 0.2))',
+			},
+			boxShadow: {
+				'3xl': '0px 0px 50px 40px rgba(31, 11, 51, 0.5)',
 			},
 			animation: {
 				marquee: 'marquee 25s linear infinite',

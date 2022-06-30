@@ -73,7 +73,7 @@
   <symbol id="telegram" viewBox="0 0 20 20">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10ZM10.3584 7.38244C9.38571 7.787 7.44178 8.62433 4.52658 9.89444C4.05319 10.0827 3.80521 10.2668 3.78264 10.4469C3.74449 10.7512 4.12559 10.8711 4.64456 11.0343C4.71515 11.0565 4.7883 11.0795 4.86328 11.1038C5.37386 11.2698 6.06069 11.464 6.41774 11.4717C6.74162 11.4787 7.10311 11.3452 7.5022 11.0711C10.226 9.2325 11.632 8.30317 11.7203 8.28314C11.7825 8.26901 11.8688 8.25123 11.9273 8.30321C11.9858 8.35518 11.98 8.4536 11.9738 8.48C11.9361 8.64095 10.4401 10.0318 9.66593 10.7515C9.42459 10.9759 9.25339 11.135 9.2184 11.1714C9.14 11.2528 9.06011 11.3298 8.98332 11.4038C8.50897 11.8611 8.15326 12.204 9.00301 12.764C9.41136 13.0331 9.73813 13.2556 10.0641 13.4776C10.4201 13.7201 10.7752 13.9619 11.2347 14.2631C11.3517 14.3398 11.4635 14.4195 11.5724 14.4971C11.9867 14.7925 12.359 15.0578 12.8188 15.0155C13.086 14.9909 13.3621 14.7397 13.5022 13.9903C13.8335 12.2193 14.4847 8.38205 14.6352 6.80081C14.6484 6.66228 14.6318 6.48498 14.6185 6.40715C14.6051 6.32932 14.5773 6.21842 14.4761 6.13633C14.3563 6.03911 14.1714 6.01861 14.0886 6.02007C13.7125 6.0267 13.1355 6.22735 10.3584 7.38244Z" fill="inherit"/>
   </symbol>
-  <svg id="twitter" viewBox="0 0 20 20">
+  <symbol id="twitter" viewBox="0 0 20 20">
     <g clip-path="url(#clip0_5496_2624)">
       <path d="M6.2918 18.1256C13.8371 18.1256 17.9652 11.8729 17.9652 6.45216C17.9652 6.27638 17.9613 6.09669 17.9535 5.92091C18.7566 5.34016 19.4496 4.62082 20 3.79669C19.2521 4.12944 18.458 4.34676 17.6449 4.44122C18.5011 3.92803 19.1421 3.12184 19.4492 2.17208C18.6438 2.64941 17.763 2.98612 16.8445 3.16779C16.2257 2.51024 15.4075 2.07487 14.5164 1.92899C13.6253 1.7831 12.711 1.93482 11.9148 2.36069C11.1186 2.78656 10.4848 3.46287 10.1115 4.28504C9.73825 5.10721 9.64619 6.02946 9.84961 6.90919C8.21874 6.82735 6.62328 6.4037 5.16665 5.66569C3.71002 4.92769 2.42474 3.89181 1.39414 2.62521C0.870333 3.52831 0.710047 4.59698 0.945859 5.61402C1.18167 6.63106 1.79589 7.52015 2.66367 8.1006C2.01219 8.07991 1.37498 7.90451 0.804688 7.58888V7.63966C0.804104 8.5874 1.13175 9.5061 1.73192 10.2396C2.3321 10.9731 3.16777 11.4761 4.09687 11.6631C3.49338 11.8282 2.85999 11.8523 2.2457 11.7334C2.50788 12.5485 3.01798 13.2614 3.70481 13.7726C4.39164 14.2838 5.22093 14.5678 6.07695 14.585C4.62369 15.7265 2.82848 16.3457 0.980469 16.3428C0.652739 16.3423 0.325333 16.3222 0 16.2826C1.87738 17.4871 4.06128 18.1268 6.2918 18.1256Z" fill="inherit"/>
     </g>
@@ -82,5 +82,65 @@
       <rect width="20" height="20" fill="inherit"/>
     </clipPath>
     </defs>
-  </svg>
+  </symbol>
+  <symbol id="chart-bar" viewBox="0 0 32 32">
+    <path d="M5.5 26V17H12.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.5 26H3.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.5 26V11H19.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.5 5H19.5V26H26.5V5Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="ticket" viewBox="0 0 32 32">
+    <path d="M12 7V25" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M3.00002 20.9C2.99874 20.6697 3.078 20.4462 3.22409 20.2682C3.37018 20.0901 3.5739 19.9687 3.80002 19.925C4.69941 19.734 5.50594 19.24 6.08465 18.5255C6.66336 17.811 6.97913 16.9194 6.97913 16C6.97913 15.0806 6.66336 14.189 6.08465 13.4745C5.50594 12.76 4.69941 12.266 3.80002 12.075C3.5739 12.0313 3.37018 11.9099 3.22409 11.7318C3.078 11.5538 2.99874 11.3303 3.00002 11.1V8C3.00002 7.73478 3.10537 7.48043 3.29291 7.29289C3.48044 7.10536 3.7348 7 4.00002 7H28C28.2652 7 28.5196 7.10536 28.7071 7.29289C28.8947 7.48043 29 7.73478 29 8V11.1C29.0013 11.3303 28.922 11.5538 28.7759 11.7318C28.6299 11.9099 28.4261 12.0313 28.2 12.075C27.3006 12.266 26.4941 12.76 25.9154 13.4745C25.3367 14.189 25.0209 15.0806 25.0209 16C25.0209 16.9194 25.3367 17.811 25.9154 18.5255C26.4941 19.24 27.3006 19.734 28.2 19.925C28.4261 19.9687 28.6299 20.0901 28.7759 20.2682C28.922 20.4462 29.0013 20.6697 29 20.9V24C29 24.2652 28.8947 24.5196 28.7071 24.7071C28.5196 24.8946 28.2652 25 28 25H4.00002C3.7348 25 3.48044 24.8946 3.29291 24.7071C3.10537 24.5196 3.00002 24.2652 3.00002 24V20.9Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="t-shirt" viewBox="0 0 32 32">
+    <path d="M24 15H27.3875C27.572 15.0004 27.753 14.9491 27.9099 14.8519C28.0668 14.7547 28.1932 14.6154 28.275 14.45L30.575 9.85C30.689 9.61962 30.711 9.35453 30.6367 9.10848C30.5625 8.86243 30.3974 8.65384 30.175 8.525L24 5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.99978 15H4.61228C4.42773 15.0004 4.24676 14.9491 4.08989 14.8519C3.93302 14.7547 3.80654 14.6154 3.72478 14.45L1.42478 9.85C1.31083 9.61962 1.28875 9.35453 1.36303 9.10848C1.43731 8.86243 1.60238 8.65384 1.82478 8.525L7.99978 5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 5C20 6.06087 19.5786 7.07828 18.8284 7.82843C18.0783 8.57857 17.0609 9 16 9C14.9391 9 13.9217 8.57857 13.1716 7.82843C12.4214 7.07828 12 6.06087 12 5H8V26C8 26.2652 8.10536 26.5196 8.29289 26.7071C8.48043 26.8946 8.73478 27 9 27H23C23.2652 27 23.5196 26.8946 23.7071 26.7071C23.8946 26.5196 24 26.2652 24 26V5H20Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="music-note" viewBox="0 0 33 33">
+    <path d="M25.4619 4.57812V10.5781" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.4619 7.57812H22.4619" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22.9619 25.5781C24.8949 25.5781 26.4619 24.0111 26.4619 22.0781C26.4619 20.1451 24.8949 18.5781 22.9619 18.5781C21.0289 18.5781 19.4619 20.1451 19.4619 22.0781C19.4619 24.0111 21.0289 25.5781 22.9619 25.5781Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M6.96191 29.5781C8.89491 29.5781 10.4619 28.0111 10.4619 26.0781C10.4619 24.1451 8.89491 22.5781 6.96191 22.5781C5.02892 22.5781 3.46191 24.1451 3.46191 26.0781C3.46191 28.0111 5.02892 29.5781 6.96191 29.5781Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.4619 15.478V22.078" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M10.4619 26.0779V8.57793L17.5244 6.81543" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20.3494 12.103L10.4619 14.578" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="users" viewBox="0 0 32 32">
+    <path d="M16 22.5C18.7614 22.5 21 20.2614 21 17.5C21 14.7386 18.7614 12.5 16 12.5C13.2386 12.5 11 14.7386 11 17.5C11 20.2614 13.2386 22.5 16 22.5Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24.5 14.5C25.6647 14.4981 26.8137 14.7683 27.8554 15.2892C28.8972 15.81 29.8028 16.5671 30.5 17.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M1.5 17.5C2.19725 16.5671 3.10285 15.81 4.14457 15.2892C5.1863 14.7683 6.33532 14.4981 7.5 14.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8.7998 27.0002C9.45833 25.6516 10.4824 24.515 11.7554 23.72C13.0283 22.9249 14.499 22.5034 15.9998 22.5034C17.5006 22.5034 18.9713 22.9249 20.2442 23.72C21.5172 24.515 22.5413 25.6516 23.1998 27.0002" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.50015 14.5C6.74096 14.5008 5.99722 14.2855 5.35584 13.8792C4.71446 13.473 4.20193 12.8927 3.87814 12.206C3.55434 11.5193 3.43266 10.7546 3.5273 10.0014C3.62194 9.24809 3.929 8.5373 4.4126 7.95206C4.89619 7.36681 5.53636 6.93127 6.25829 6.69634C6.98022 6.4614 7.75411 6.43677 8.48952 6.62532C9.22493 6.81388 9.8915 7.20782 10.4113 7.76113C10.9312 8.31444 11.2828 9.00427 11.4252 9.75" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20.5752 9.75C20.7175 9.00427 21.0692 8.31444 21.589 7.76113C22.1089 7.20782 22.7754 6.81388 23.5108 6.62532C24.2462 6.43677 25.0201 6.4614 25.7421 6.69634C26.464 6.93127 27.1042 7.36681 27.5878 7.95206C28.0714 8.5373 28.3784 9.24809 28.4731 10.0014C28.5677 10.7546 28.446 11.5193 28.1222 12.206C27.7984 12.8927 27.2859 13.473 26.6445 13.8792C26.0031 14.2855 25.2594 14.5008 24.5002 14.5" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="lock" viewBox="0 0 32 32">
+    <path d="M26 11H6C5.44772 11 5 11.4477 5 12V26C5 26.5523 5.44772 27 6 27H26C26.5523 27 27 26.5523 27 26V12C27 11.4477 26.5523 11 26 11Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M11.5 11V6.5C11.5 5.30653 11.9741 4.16193 12.818 3.31802C13.6619 2.47411 14.8065 2 16 2C17.1935 2 18.3381 2.47411 19.182 3.31802C20.0259 4.16193 20.5 5.30653 20.5 6.5V11" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M16 20.5C16.8284 20.5 17.5 19.8284 17.5 19C17.5 18.1716 16.8284 17.5 16 17.5C15.1716 17.5 14.5 18.1716 14.5 19C14.5 19.8284 15.1716 20.5 16 20.5Z" fill="inherit"/>
+  </symbol>
+  <symbol id="microphone" viewBox="0 0 32 32">
+    <path d="M21 19C25.4183 19 29 15.4183 29 11C29 6.58172 25.4183 3 21 3C16.5817 3 13 6.58172 13 11C13 15.4183 16.5817 19 21 19Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M26.6624 16.6624L15.3374 5.3374" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.5 19.5L11 21" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M13.0999 12.2373L3.51241 25.3123C3.3683 25.5042 3.29896 25.7419 3.31736 25.9812C3.33577 26.2204 3.44065 26.4448 3.61241 26.6123L5.38741 28.3873C5.55496 28.5591 5.77932 28.664 6.01856 28.6824C6.25781 28.7008 6.49557 28.6314 6.68741 28.4873L19.7624 18.8998" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="binoculars" viewBox="0 0 32 32">
+    <path d="M13 11.5H19" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M28.7 19.2874L23.2375 6.8749C22.6735 6.31689 21.9121 6.00391 21.1187 6.00391C20.3254 6.00391 19.564 6.31689 19 6.8749V20.9999" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M12.9998 20.9999V6.8749C12.4358 6.31689 11.6744 6.00391 10.8811 6.00391C10.0877 6.00391 9.3263 6.31689 8.7623 6.8749L3.2998 19.2874" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M8 26C10.7614 26 13 23.7614 13 21C13 18.2386 10.7614 16 8 16C5.23858 16 3 18.2386 3 21C3 23.7614 5.23858 26 8 26Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M24 26C26.7614 26 29 23.7614 29 21C29 18.2386 26.7614 16 24 16C21.2386 16 19 18.2386 19 21C19 23.7614 21.2386 26 24 26Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="monitor-play" viewBox="0 0 32 32">
+    <path d="M6 24L26 24C27.1046 24 28 23.1046 28 22L28 8C28 6.89543 27.1046 6 26 6L6 6C4.89543 6 4 6.89543 4 8L4 22C4 23.1046 4.89543 24 6 24Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 28H12" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20 15L14 11V19L20 15Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <symbol id="sketch" viewBox="0 0 32 32">
+    <path d="M9 5H23L30 13L16 28L2 13L9 5Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M22.1373 13L15.9998 28L9.8623 13L15.9998 5L22.1373 13Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M2 13H30" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
 </svg>
