@@ -70,4 +70,8 @@
   .full-bg-custom-l-gradient {
     background: linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%) border-box;
   }
+
+  .pause {
+    animation-play-state: paused;
+  }
 }

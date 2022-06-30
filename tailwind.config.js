@@ -47,10 +47,12 @@ module.exports = {
 			'3xl': ['2.25rem', '2.875rem'], // 36px
 			'4xl': ['2.5rem', '2.75rem'], // 40px
 			'5xl': '3rem', // 48px
+			'5.5xl': ['3.125rem', '3.875rem'], // 50px
 			'6xl': ['3.25rem', '3.875rem'], // 52px
 			'7xl': ['4rem', '4.375rem'], // 64px
 			'8xl': ['5.125rem', '5.625rem'], // 82px
 			'9xl': ['6rem', '6.25rem'], // 96px
+			'9.5xl': ['6.26rem', '7.875rem'], // 100px
 			'10xl': ['8rem', '8rem'], // 128px
 		},
 		extend: {
@@ -87,10 +89,16 @@ module.exports = {
 				59: '14.5rem', // 232px
 				71: '17.5rem', // 280px
 				71.5: '17.625rem', // 282px
+				82: '21.375rem', // 342px
 				95: '23.375rem', // 374px
+			},
+			height: {
+				'3/20': '15%',
+				500: '31.25rem', // 500px
 			},
 			width: {
 				'3/20': '15%',
+				500: '31.25rem', // 500px
 			},
 			maxWidth: {
 				unset: 'unset',
@@ -120,6 +128,20 @@ module.exports = {
 			},
 			dropShadow: {
 				'3xl': 'drop-shadow(0px 0px 20px rgba(20, 20, 46, 0.2))',
+			},
+			animation: {
+				marquee: 'marquee 25s linear infinite',
+				marquee2: 'marquee2 25s linear infinite',
+			},
+			keyframes: {
+				marquee: {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' },
+				},
+				marquee2: {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0%)' },
+				},
 			},
 		},
 	},
