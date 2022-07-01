@@ -6,8 +6,9 @@ import poolsMobile from '@/assets/img/pools-mobile.svg?url'
 <template>
 	<Grid>
 		<div
-			class="col-span-12 md:col-span-8 xl:col-span-4 md:col-start-3 xl:col-start-8 flex flex-col items-center xl:items-end mb-14 md:mb-13 lg:mb-35 xl:mb-0 2xl:mr-11.5"
+			class="col-span-12 md:col-span-8 xl:col-span-4 md:col-start-3 xl:col-start-8 flex flex-col items-center xl:items-end mb-14 md:mb-13 lg:mb-35 xl:mb-0 2xl:mr-11.5 relative"
 		>
+			<PurpleBlurSphere class="absolute -top-72 left-18 lg:left-14 -translate-x-full hidden md:block" />
 			<Badge class="w-full mb-6">pools</Badge>
 
 			<h3

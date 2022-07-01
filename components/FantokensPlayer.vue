@@ -22,7 +22,10 @@ const breakpoints: {
 </script>
 
 <template>
-	<section>
+	<section class="relative">
+		<PurpleBlurSphere
+			class="absolute -translate-y-2/4 xl:-translate-y-3/4 -translate-x-2/4 xl:-translate-x-3/4 hidden lg:block"
+		/>
 		<Grid class="gap-y-11.5 md:hidden">
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" playing class="col-span-4 col-start-2" />
 			<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" class="col-span-4 col-end-12" />
@@ -36,31 +39,31 @@ const breakpoints: {
 			:breakpoints="breakpoints"
 			:grab-cursor="true"
 		>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" playing :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
-			<swiper-slide class="!w-1/6 lg:!w-[14.3%] xl:!w-3/20">
+			<swiper-slide class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20">
 				<FantokenOrb name="Adam Clay" role="Singer" :img="adamToken" />
 			</swiper-slide>
 		</swiper>

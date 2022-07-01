@@ -25,6 +25,7 @@ module.exports = {
 			purple: '#9C589C',
 			purple2: '#B79BC1',
 			purple3: '#250F31',
+			purple4: '#2D1246',
 			green: '#0AF9B1',
 			success: '#12A481',
 			error: '#DC004F',
@@ -112,6 +113,9 @@ module.exports = {
 				'2xlbutton': '12.75rem', // 204px
 				lginput: '19.625rem', // 314px
 			},
+			rotate: {
+				135: '135deg',
+			},
 			gridTemplateRows: {
 				masonryThree: 'auto 23% auto',
 			},
@@ -128,6 +132,8 @@ module.exports = {
 				'custom-l-text-gradient': 'linear-gradient(105deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 60.98%)',
 				'custom-radial-gradient':
 					'radial-gradient(50% 50% at 50% 50%, var(--tw-gradient-from) 72.92%, var(--tw-gradient-to) 100%)',
+				'custom-sphere-radial-gradient':
+					'radial-gradient(408.21% 408.21% at 18.56% 400.73%, var(--tw-gradient-from) 43.75%, var(--tw-gradient-to) 90.1%)',
 			},
 			strokeWidth: {
 				3: '3px',

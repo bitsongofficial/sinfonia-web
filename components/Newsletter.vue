@@ -28,7 +28,7 @@ const onSubmit = handleSubmit(() => {
 
 <template>
 	<Grid class="relative" tag="section">
-		<PurpleBlurSphere class="absolute -top-44 -right-7.5" />
+		<PurpleBlurSphere class="absolute -top-44 md:top-28 lg:top-64 -right-7.5 md:-right-24 lg:-right-36" />
 		<h4
 			class="col-span-12 md:col-span-4 xl:col-span-3 md:!col-start-2 text-white font-medium text-center md:text-left mb-13 md:mb-0"
 		>
