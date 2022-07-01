@@ -112,6 +112,9 @@ module.exports = {
 				'2xlbutton': '12.75rem', // 204px
 				lginput: '19.625rem', // 314px
 			},
+			gridTemplateRows: {
+				masonryThree: 'auto 23% auto',
+			},
 			borderRadius: {
 				medium: '1.25rem', // 20px
 				'4xl': '1.875rem', // 30px
