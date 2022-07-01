@@ -1,8 +1,18 @@
+<script lang="ts" setup>
+/* import Rellax from 'rellax'
+
+onMounted(() => {
+	new Rellax('.rellax', {
+		speed: 2,
+	})
+}) */
+</script>
+
 <template>
 	<Grid class="relative mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" tag="section">
-		<SmallOrb class="absolute -rotate-90 top-20 md:-top-6 lg:-top-8 xl:top-48 -left-3 lg:left-0 xl:-left-10" />
+		<SmallOrb class="rellax absolute -rotate-90 top-20 md:-top-6 lg:-top-8 xl:top-48 -left-3 lg:left-0 xl:-left-10" />
 		<SmallOrb
-			class="absolute rotate-135 -bottom-5 md:bottom-6 lg:-bottom-6 xl:-bottom-24 -right-5 md:right-0 lg:right-20 xl:right-0"
+			class="rellax absolute rotate-135 -bottom-5 md:bottom-6 lg:-bottom-6 xl:-bottom-24 -right-5 md:right-0 lg:right-20 xl:right-0"
 		/>
 
 		<h1
