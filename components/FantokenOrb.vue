@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-withDefaults(
+const props = withDefaults(
 	defineProps<{
 		name: string
 		role: string
@@ -10,10 +10,18 @@ withDefaults(
 		playing: false,
 	}
 )
+
+const emits = defineEmits<{
+	(e: 'update:playing', isPlaying: boolean): void
+}>()
+
+const onClick = () => {
+	emits('update:playing', !props.playing)
+}
 </script>
 
 <template>
-	<figure class="flex flex-col items-center cursor-pointer relative">
+	<figure class="flex flex-col items-center cursor-pointer relative" @click="onClick">
 		<div class="mb-4 md:mb-10.5 lg:mb-8 xl:mb-14 2xl:mb-18 relative">
 			<div
 				class="w-18 md:w-20 lg:w-24 xl:w-32 2xl:w-40 h-18 md:h-20 lg:h-24 xl:h-32 2xl:h-40 absolute z-auto left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4"
@@ -41,10 +49,5 @@ withDefaults(
 		>
 			{{ role }}
 		</p>
-		<audio>
-			<source src="@/assets/audio/sample.mp3" type="audio/mpeg" />
-			Your browser does not support the
-			<code>audio</code> element.
-		</audio>
 	</figure>
 </template>

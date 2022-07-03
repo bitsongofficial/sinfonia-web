@@ -1,14 +1,28 @@
+<script lang="ts" setup>
+import FantokensPlayerVue from './components/FantokensPlayer.vue'
+
+const fantokensPlayer = ref<InstanceType<typeof FantokensPlayerVue> | null>()
+
+provide('fantokensPlayer', fantokensPlayer)
+</script>
+
 <template>
 	<NuxtLayout>
 		<div class="container mx-auto px-7.5 md:px-10 lg:px-14">
+			<Navbar />
 			<Grid>
 				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
 			</Grid>
+
 			<IntroSection />
+
 			<Grid>
 				<FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" />
 
-				<FantokensPlayer class="col-span-12 md:col-span-11 md:col-start-2 mb-43 md:mb-40 lg:mb-49 xl:mb-45 2xl:mb-36" />
+				<FantokensPlayer
+					ref="fantokensPlayer"
+					class="col-span-12 md:col-span-11 md:col-start-2 mb-43 md:mb-40 lg:mb-49 xl:mb-45 2xl:mb-36"
+				/>
 
 				<Newsletter class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
 

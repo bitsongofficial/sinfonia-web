@@ -26,6 +26,8 @@ module.exports = {
 			purple2: '#B79BC1',
 			purple3: '#250F31',
 			purple4: '#2D1246',
+			purple5: '#25092B',
+			grey: '#FEFEFE',
 			green: '#0AF9B1',
 			success: '#12A481',
 			error: '#DC004F',
@@ -128,6 +130,7 @@ module.exports = {
 				full: '1000px',
 			},
 			backgroundImage: {
+				'custom-t-l-gradient': 'linear-gradient(286.58deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%)',
 				'custom-l-gradient': 'linear-gradient(176deg, var(--tw-gradient-from) 21.78%, var(--tw-gradient-to) 79.22%)',
 				'custom-l-text-gradient': 'linear-gradient(105deg, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 60.98%)',
 				'custom-radial-gradient':
