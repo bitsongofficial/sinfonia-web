@@ -8,9 +8,10 @@ provide('fantokensPlayer', fantokensPlayer)
 
 <template>
 	<NuxtLayout>
-		<div class="container mx-auto px-7.5 md:px-10 lg:px-14">
-			<Navbar />
-			<Grid>
+		<Navbar />
+
+		<Container>
+			<Grid class="xl:hidden">
 				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
 			</Grid>
 
@@ -53,6 +54,6 @@ provide('fantokensPlayer', fantokensPlayer)
 			</Grid>
 
 			<Footer class="mb-40 md:mb-29 lg:mb-20 xl:mb-36 2xl:mb-39" />
-		</div>
+		</Container>
 	</NuxtLayout>
 </template>

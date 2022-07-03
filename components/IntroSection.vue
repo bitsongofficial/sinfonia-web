@@ -16,7 +16,7 @@ onMounted(() => {
 		/>
 
 		<h1
-			class="col-span-12 lg:col-span-10 lg:col-start-2 font-bold text-center text-radial-gradient-white mb-6 md:mb-8 xl:mb-11.5"
+			class="col-span-12 lg:col-span-10 lg:col-start-2 font-bold text-center text-radial-gradient-white mb-6 md:mb-8 xl:mb-11.5 xl:mt-48 2xl:mt-40"
 		>
 			Music Industry has<br class="hidden md:inline" />
 			arrived in Web 3.0

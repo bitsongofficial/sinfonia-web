@@ -27,6 +27,7 @@ module.exports = {
 			purple3: '#250F31',
 			purple4: '#2D1246',
 			purple5: '#25092B',
+			purple6: '#1D0A2A',
 			grey: '#FEFEFE',
 			green: '#0AF9B1',
 			success: '#12A481',
@@ -120,6 +121,7 @@ module.exports = {
 			},
 			gridTemplateRows: {
 				masonryThree: 'auto 23% auto',
+				menuLayout: '1fr auto',
 			},
 			borderRadius: {
 				medium: '1.25rem', // 20px
