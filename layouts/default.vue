@@ -1,6 +1,12 @@
+<script lang="ts" setup>
+const menuStore = useMenuStore()
+
+const bodyClasses = computed(() => `bg-primary ${menuStore.open ? 'overflow-hidden' : ''}`)
+</script>
+
 <template>
 	<div class="default-layout">
-		<Body class="bg-primary"></Body>
+		<Body :class="bodyClasses"></Body>
 		<div class="overflow-hidden relative">
 			<slot></slot>
 		</div>

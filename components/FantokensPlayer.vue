@@ -1,9 +1,10 @@
 <script lang="ts" setup>
 import { SwiperOptions } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
-import { fantokens } from '@/constants'
 
 import 'swiper/css'
+
+const audioStore = useAudioStore()
 
 const breakpoints: {
 	[width: number]: SwiperOptions
@@ -21,31 +22,23 @@ const breakpoints: {
 }
 
 const audioPlayer = ref<HTMLAudioElement>()
-const activeTrackIndex = ref(-1)
 
-const fantokensStatus = computed(() =>
-	fantokens.map((fantoken, index) => ({
-		...fantoken,
-		playing: index === activeTrackIndex.value,
-	}))
-)
-
-const playableTrack = computed<string | undefined>(() => {
-	if (activeTrackIndex.value in fantokensStatus.value) {
-		return fantokensStatus.value[activeTrackIndex.value].track
-	}
-
-	return undefined
+const activeTrackIndex = computed({
+	get: () => audioStore.activeTrackIndex,
+	set: (value) => {
+		audioStore.activeTrackIndex = value
+	},
 })
 
 const onFantokenChange = (isPlaying: boolean, index: number) => {
 	activeTrackIndex.value = !isPlaying ? -1 : index
+	audioStore.isPlaying = isPlaying
 
 	if (audioPlayer.value) {
 		audioPlayer.value.pause()
 		audioPlayer.value.currentTime = 0
 
-		if (playableTrack.value) {
+		if (audioStore.playableTrack) {
 			audioPlayer.value.play()
 		}
 	}
@@ -53,7 +46,7 @@ const onFantokenChange = (isPlaying: boolean, index: number) => {
 
 const toggleMuted = () => {
 	if (audioPlayer.value) {
-		audioPlayer.value.muted = !audioPlayer.value.muted
+		audioPlayer.value.muted = !audioStore.volumeActive
 	}
 }
 
@@ -83,13 +76,13 @@ defineExpose({
 			class="absolute -translate-y-2/4 xl:-translate-y-3/4 -translate-x-2/4 xl:-translate-x-3/4 hidden lg:block"
 		/>
 		<audio class="invisible" ref="audioPlayer">
-			<source :src="playableTrack" type="audio/mpeg" v-if="playableTrack" />
+			<source :src="audioStore.playableTrack" type="audio/mpeg" v-if="audioStore.playableTrack" />
 			Your browser does not support the
 			<code>audio</code> element.
 		</audio>
 		<Grid class="gap-y-11.5 md:hidden">
 			<FantokenOrb
-				v-for="(fantoken, index) in fantokensStatus"
+				v-for="(fantoken, index) in audioStore.fantokens"
 				:key="index"
 				v-bind="fantoken"
 				class="col-span-4"
@@ -109,7 +102,7 @@ defineExpose({
 		>
 			<swiper-slide
 				class="!w-1/6 lg:!w-[14.5%] xl:!w-3/20"
-				v-for="(fantoken, index) in fantokensStatus"
+				v-for="(fantoken, index) in audioStore.fantokens"
 				:key="index"
 				v-bind="fantoken"
 			>

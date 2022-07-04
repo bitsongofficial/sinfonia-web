@@ -5,6 +5,9 @@ import svgLoader from 'vite-svg-loader'
 export default defineNuxtConfig({
 	typescript: {
 		shim: false,
+		tsConfig: {
+			types: ['@pinia/nuxt'],
+		},
 	},
 	build: {
 		postcss: {
@@ -23,4 +26,5 @@ export default defineNuxtConfig({
 	vite: {
 		plugins: [svgLoader()],
 	},
+	modules: ['@pinia/nuxt'],
 })

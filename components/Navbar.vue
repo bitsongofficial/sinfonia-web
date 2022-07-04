@@ -2,8 +2,22 @@
 import { Ref } from 'vue'
 import FantokensPlayerVue from './FantokensPlayer.vue'
 
-const volumeActive = ref(true)
-const menuOpen = ref(false)
+const menuStore = useMenuStore()
+const audioStore = useAudioStore()
+
+const volumeActive = computed({
+	get: () => audioStore.volumeActive,
+	set: (value) => {
+		audioStore.volumeActive = value
+	},
+})
+
+const menuOpen = computed({
+	get: () => menuStore.open,
+	set: (value) => {
+		menuStore.open = value
+	},
+})
 
 const fantokensPlayer = inject<Ref<InstanceType<typeof FantokensPlayerVue> | null>>('fantokensPlayer')
 
