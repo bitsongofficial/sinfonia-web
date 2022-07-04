@@ -22,12 +22,14 @@ module.exports = {
 			primary: '#1B0929',
 			secondary: '#FF005C',
 			red: '#E7166C',
+			red2: '#B10651',
 			purple: '#9C589C',
 			purple2: '#B79BC1',
 			purple3: '#250F31',
 			purple4: '#2D1246',
 			purple5: '#25092B',
 			purple6: '#1D0A2A',
+			purple7: '#2C0E38',
 			grey: '#FEFEFE',
 			green: '#0AF9B1',
 			success: '#12A481',
@@ -73,6 +75,7 @@ module.exports = {
 				13.5: '3.375rem', // 54px
 				14.5: '3.625rem', // 58px
 				15: '3.75rem', // 60px
+				15.5: '3.875rem', // 62px
 				16.5: '4.375rem', // 70px
 				18: '4.625rem', // 74px
 				20.5: '5.125rem', // 82px
@@ -93,8 +96,12 @@ module.exports = {
 				59: '14.5rem', // 232px
 				71: '17.5rem', // 280px
 				71.5: '17.625rem', // 282px
+				73: '19.625rem', // 314px
 				82: '21.375rem', // 342px
 				95: '23.375rem', // 374px
+				110: '32.125rem', // 514px
+				146: '44.625rem', // 714px
+				200: '78.25rem', // 1252px
 			},
 			height: {
 				'3/20': '15%',
@@ -103,6 +110,9 @@ module.exports = {
 			width: {
 				'3/20': '15%',
 				500: '31.25rem', // 500px
+			},
+			zIndex: {
+				1: '1',
 			},
 			minWidth: {
 				6: '1.5rem',
@@ -118,6 +128,10 @@ module.exports = {
 			},
 			rotate: {
 				135: '135deg',
+				45: '45deg',
+			},
+			scale: {
+				25: '2.5',
 			},
 			gridTemplateRows: {
 				masonryThree: 'auto 23% auto',

@@ -5,9 +5,11 @@ const props = withDefaults(
 		role: string
 		img: string
 		playing?: boolean
+		otherPlaying?: boolean
 	}>(),
 	{
 		playing: false,
+		otherPlaying: false,
 	}
 )
 
@@ -21,7 +23,13 @@ const onClick = () => {
 </script>
 
 <template>
-	<figure class="flex flex-col items-center cursor-pointer relative" @click="onClick">
+	<figure
+		class="flex flex-col items-center cursor-pointer relative transition-opacity duration-500 ease-in-out"
+		:class="{
+			'opacity-20': otherPlaying && !playing,
+		}"
+		@click="onClick"
+	>
 		<div class="mb-4 md:mb-10.5 lg:mb-8 xl:mb-14 2xl:mb-18 relative">
 			<div
 				class="w-18 md:w-20 lg:w-24 xl:w-32 2xl:w-40 h-18 md:h-20 lg:h-24 xl:h-32 2xl:h-40 absolute z-auto left-2/4 top-2/4 -translate-x-2/4 -translate-y-2/4"

@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const menuStore = useMenuStore()
 
-const bodyClasses = computed(() => `bg-primary ${menuStore.open ? 'overflow-hidden' : ''}`)
+const bodyClasses = computed(() => `bg-primary ${menuStore.open || menuStore.loading ? 'overflow-hidden' : ''}`)
 </script>
 
 <template>

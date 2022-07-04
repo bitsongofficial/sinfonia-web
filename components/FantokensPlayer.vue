@@ -91,6 +91,7 @@ defineExpose({
 					'col-end-12': index % 2 !== 0,
 				}"
 				@update:playing="onFantokenChange($event, index)"
+				:other-playing="audioStore.isPlaying"
 			/>
 		</Grid>
 		<swiper
@@ -106,7 +107,11 @@ defineExpose({
 				:key="index"
 				v-bind="fantoken"
 			>
-				<FantokenOrb v-bind="fantoken" @update:playing="onFantokenChange($event, index)" />
+				<FantokenOrb
+					v-bind="fantoken"
+					@update:playing="onFantokenChange($event, index)"
+					:other-playing="audioStore.isPlaying"
+				/>
 			</swiper-slide>
 		</swiper>
 	</section>

@@ -75,3 +75,20 @@
     animation-play-state: paused;
   }
 }
+
+.fade-enter-active {
+  animation: fade-in 800ms;
+}
+
+.fade-leave-active {
+  animation: fade-in 800ms reverse;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

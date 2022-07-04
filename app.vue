@@ -1,6 +1,8 @@
 <script lang="ts" setup>
 import FantokensPlayerVue from './components/FantokensPlayer.vue'
 
+const menuStore = useMenuStore()
+
 const fantokensPlayer = ref<InstanceType<typeof FantokensPlayerVue> | null>()
 
 provide('fantokensPlayer', fantokensPlayer)
@@ -9,6 +11,7 @@ provide('fantokensPlayer', fantokensPlayer)
 <template>
 	<NuxtLayout>
 		<Navbar />
+		<Loading v-if="menuStore.loading" />
 
 		<Container>
 			<Grid class="xl:hidden">

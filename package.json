@@ -19,9 +19,11 @@
     "@nuxt/kit": "3.0.0-rc.4",
     "@pinia/nuxt": "^0.1.9",
     "@vee-validate/rules": "^4.5.11",
+    "@vueuse/core": "^8.7.5",
     "pinia": "^2.0.14",
     "rellax": "^1.12.1",
     "swiper": "^8.2.4",
-    "vee-validate": "^4.5.11"
+    "vee-validate": "^4.5.11",
+    "vue-number-animation": "^1.1.2"
   }
 }
