@@ -35,7 +35,7 @@ provide('fantokensPlayer', fantokensPlayer)
 					class="col-span-12 md:col-span-11 md:col-start-2 mb-43 md:mb-40 lg:mb-49 xl:mb-45 2xl:mb-36"
 				/>
 
-				<Newsletter class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
+				<Newsletter :list-id="config.public.newsletter.listID" class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
 
 				<DefiSection class="col-span-12 mb-29 md:mb-32 lg:mb-35 xl:mb-40 2xl:mb-49" />
 
