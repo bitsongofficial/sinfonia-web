@@ -1,5 +1,8 @@
 <script lang="ts" setup>
+import { useMediaQuery } from '@vueuse/core'
 import FantokensPlayerVue from './components/FantokensPlayer.vue'
+
+const isLargeScreen = useMediaQuery('(min-width: 1280px)')
 
 const menuStore = useMenuStore()
 
@@ -10,7 +13,7 @@ provide('fantokensPlayer', fantokensPlayer)
 
 <template>
 	<NuxtLayout>
-		<Loading v-if="menuStore.loading || menuStore.fixed" />
+		<Loading v-show="menuStore.loading || (menuStore.fixed && isLargeScreen)" />
 		<Navbar />
 
 		<Container>

@@ -6,6 +6,7 @@ const {
 	animationTextOpacityStyle,
 	animationLogoOpacityStyle,
 	hideLoadingScreen,
+	animationFixed,
 } = useSphereLoadingAnimation()
 </script>
 
@@ -63,6 +64,15 @@ const {
 					:style="animationTextOpacityStyle"
 				>
 					<p class="!text-2xl xl:!text-4xl font-bold">Immerse yourself<br />by Activating the Sounds</p>
+				</div>
+			</Transition>
+			<Transition name="fade" mode="out-in">
+				<div
+					class="flex flex-col items-center justify-center text-center z-50 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2"
+					v-if="animationFixed"
+				>
+					<Icon name="mouse" class="stroke-white stroke-2 w-5 h-7.5 mb-4.5 fill-transparent animate-bounce" />
+					<p class="!text-tiny text-white/30">Scroll down</p>
 				</div>
 			</Transition>
 		</Container>

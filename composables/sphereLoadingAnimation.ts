@@ -6,11 +6,11 @@ export const useSphereLoadingAnimation = () => {
 
 	const isLargeScreen = useMediaQuery('(min-width: 1280px)')
 
-	const duration = 5000 // ms
-	const animationDuration = 3 // seconds
-	const textFadeDuration = 400 // ms
-	const logoFadeDuration = 700 // ms
-	const hideScreenDuration = 1400 // ms
+	const duration = ref(5000) // ms
+	const animationDuration = ref(3) // seconds
+	const textFadeDuration = ref(400) // ms
+	const logoFadeDuration = ref(700) // ms
+	const hideScreenDuration = ref(1400) // ms
 	const scaleTo = computed(() => (isLargeScreen.value ? 1.05 : 6))
 	const rotateTo = 360
 	const scaleFrom = ref(1)
@@ -22,10 +22,24 @@ export const useSphereLoadingAnimation = () => {
 	const opacityLogoFrom = ref(1)
 	const textAnimationCompleted = ref(false)
 
+	const animationLoading = computed({
+		get: () => menuStore.loading,
+		set: (value) => {
+			menuStore.loading = value
+		},
+	})
+
+	const animationFixed = computed({
+		get: () => menuStore.fixed,
+		set: (value) => {
+			menuStore.fixed = value
+		},
+	})
+
 	const { start } = useTimeoutFn(
 		() => {
 			if (isLargeScreen.value) {
-				menuStore.fixed = true
+				animationFixed.value = true
 			}
 
 			animationLoading.value = false
@@ -35,13 +49,6 @@ export const useSphereLoadingAnimation = () => {
 			immediate: false,
 		}
 	)
-
-	const animationLoading = computed({
-		get: () => menuStore.loading,
-		set: (value) => {
-			menuStore.loading = value
-		},
-	})
 
 	const opacityLogoTransition = useTransition(opacityLogoFrom, {
 		duration: logoFadeDuration,
@@ -87,6 +94,26 @@ export const useSphereLoadingAnimation = () => {
 		opacity: opacityLogoTransition.value,
 	}))
 
+	watch(
+		() => isLargeScreen.value,
+		(value) => {
+			if (!animationLoading.value) {
+				if (value) {
+					duration.value = 0
+					animationDuration.value = 0
+					textFadeDuration.value = 0
+					logoFadeDuration.value = 0
+					hideScreenDuration.value = 0
+					scaleFrom.value = 1.05
+					rotateFrom.value = 0
+					animationFixed.value = true
+				} else {
+					animationFixed.value = false
+				}
+			}
+		}
+	)
+
 	onMounted(() => {
 		scaleFrom.value = scaleTo.value
 		rotateFrom.value = rotateTo
@@ -98,6 +125,7 @@ export const useSphereLoadingAnimation = () => {
 		animationScaleStyle,
 		animationDuration,
 		animationLoading,
+		animationFixed,
 		textAnimationCompleted,
 		hideLoadingScreen,
 	}
