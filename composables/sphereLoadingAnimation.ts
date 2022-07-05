@@ -83,7 +83,7 @@ export const useSphereLoadingAnimation = () => {
 	const animationScaleStyle = computed<CSSProperties>(() => ({
 		'--tw-scale-x': scaleTransition.value,
 		'--tw-scale-y': scaleTransition.value,
-		'--tw-rotate': `${rotateTransition.value}deg`,
+		'--tw-rotate': !isLargeScreen.value ? `${rotateTransition.value}deg` : '',
 	}))
 
 	const animationTextOpacityStyle = computed<CSSProperties>(() => ({

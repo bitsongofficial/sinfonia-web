@@ -34,14 +34,16 @@ const {
 					:style="!isLargeScreen ? animationTextOpacityStyle : null"
 				/>
 				<div class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" :style="animationScaleStyle">
-					<MediumOrb class="absolute top-9 md:top-15 xl:top-36 left-9 md:left-15 xl:left-36 -rotate-45" />
-					<MediumOrb class="absolute top-0 left-1/2 -translate-x-1/2" />
-					<MediumOrb class="absolute top-9 md:top-15 xl:top-36 right-9 md:right-15 xl:right-36 rotate-45" />
-					<MediumOrb class="absolute top-1/2 left-0 -translate-y-1/2 -rotate-90" />
-					<MediumOrb class="absolute top-1/2 right-0 -translate-y-1/2 rotate-90" />
-					<MediumOrb class="absolute bottom-9 md:bottom-15 xl:bottom-36 left-9 md:left-15 xl:left-36 -rotate-135" />
-					<MediumOrb class="absolute bottom-0 left-1/2 rotate-180 -translate-x-1/2" />
-					<MediumOrb class="absolute bottom-9 md:bottom-15 xl:bottom-36 right-9 md:right-15 xl:right-36 rotate-135" />
+					<div class="w-full h-full xl:animate-spin-slow" :style="animationScaleStyle">
+						<MediumOrb class="absolute top-9 md:top-15 xl:top-36 left-9 md:left-15 xl:left-36 -rotate-45" />
+						<MediumOrb class="absolute top-0 left-1/2 -translate-x-1/2" />
+						<MediumOrb class="absolute top-9 md:top-15 xl:top-36 right-9 md:right-15 xl:right-36 rotate-45" />
+						<MediumOrb class="absolute top-1/2 left-0 -translate-y-1/2 -rotate-90" />
+						<MediumOrb class="absolute top-1/2 right-0 -translate-y-1/2 rotate-90" />
+						<MediumOrb class="absolute bottom-9 md:bottom-15 xl:bottom-36 left-9 md:left-15 xl:left-36 -rotate-135" />
+						<MediumOrb class="absolute bottom-0 left-1/2 rotate-180 -translate-x-1/2" />
+						<MediumOrb class="absolute bottom-9 md:bottom-15 xl:bottom-36 right-9 md:right-15 xl:right-36 rotate-135" />
+					</div>
 				</div>
 			</div>
 			<Transition name="fade" mode="out-in" appear>
