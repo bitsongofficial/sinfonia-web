@@ -27,4 +27,9 @@ export default defineNuxtConfig({
 		plugins: [svgLoader()],
 	},
 	modules: ['@pinia/nuxt'],
+	runtimeConfig: {
+		public: {
+			countdownDate: '2022-07-10T22:00:00.000Z',
+		},
+	},
 })

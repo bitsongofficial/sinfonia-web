@@ -1,12 +1,7 @@
 <script lang="ts" setup>
-const propsInt = withDefaults(
-	defineProps<{
-		date?: string
-	}>(),
-	{
-		date: new Date('07-11-2022').toISOString(),
-	}
-)
+const propsInt = defineProps<{
+	date: string
+}>()
 
 const time = computed(() => new Date(propsInt.date).getTime() - new Date().getTime())
 </script>
