@@ -5,6 +5,9 @@ import FantokensPlayerVue from './components/FantokensPlayer.vue'
 const isLargeScreen = useMediaQuery('(min-width: 1280px)')
 
 const menuStore = useMenuStore()
+const config = useRuntimeConfig()
+
+console.log(config.public)
 
 const fantokensPlayer = ref<InstanceType<typeof FantokensPlayerVue> | null>()
 
@@ -21,7 +24,9 @@ provide('fantokensPlayer', fantokensPlayer)
 				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
 			</Grid>
 
-			<IntroSection />
+			<IntroSection class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
+
+			<CountdownSection class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
 
 			<Grid>
 				<FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" />

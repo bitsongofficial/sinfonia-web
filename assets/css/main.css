@@ -80,6 +80,21 @@
   }
 }
 
+/* Animations */
+
+.translate-enter-active {
+  transition: transform 500ms ease-in-out;
+  transform: translateY(-100%);
+}
+
+.translate-enter-from {
+  transition: translateY(-100%);
+}
+
+.translate-enter-to {
+  transform: translateY(0) !important;
+}
+
 .fade-enter-active {
   animation: fade-in 800ms;
 }

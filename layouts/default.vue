@@ -4,6 +4,15 @@ const menuStore = useMenuStore()
 const bodyClasses = computed(
 	() => `bg-primary overflow-overlay ${menuStore.open || menuStore.loading ? '!overflow-hidden' : ''}`
 )
+
+onMounted(() => {
+	if (process.client && window) {
+		window.history.scrollRestoration = 'manual'
+		window.scrollTo({
+			top: 0,
+		})
+	}
+})
 </script>
 
 <template>

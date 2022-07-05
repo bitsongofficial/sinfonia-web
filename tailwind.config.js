@@ -30,6 +30,7 @@ module.exports = {
 			purple5: '#25092B',
 			purple6: '#1D0A2A',
 			purple7: '#2C0E38',
+			purple8: '#14142E',
 			grey: '#FEFEFE',
 			green: '#0AF9B1',
 			success: '#12A481',
@@ -55,11 +56,13 @@ module.exports = {
 			'5xl': '3rem', // 48px
 			'5.5xl': ['3.125rem', '3.875rem'], // 50px
 			'6xl': ['3.25rem', '3.875rem'], // 52px
+			'6.5xl': ['3.75rem', '4.75rem'], // 52px
 			'7xl': ['4rem', '4.375rem'], // 64px
 			'8xl': ['5.125rem', '5.625rem'], // 82px
 			'9xl': ['6rem', '6.25rem'], // 96px
 			'9.5xl': ['6.26rem', '7.875rem'], // 100px
 			'10xl': ['8rem', '8rem'], // 128px
+			'11xl': ['6.75rem', '8.5rem'], // 108px
 		},
 		extend: {
 			spacing: {
@@ -78,10 +81,12 @@ module.exports = {
 				15.5: '3.875rem', // 62px
 				16.5: '4.375rem', // 70px
 				18: '4.625rem', // 74px
+				18.5: '4.75rem', // 76px
 				20.5: '5.125rem', // 82px
 				21: '5.375rem', // 86px
 				24.5: '6.125rem', // 98px
 				25: '6.5rem', // 104px
+				25.5: '6.625rem', // 106px
 				26: '6.75rem', // 108px
 				29: '7.5rem', // 120px
 				30: '7.75rem', // 124px
@@ -115,6 +120,12 @@ module.exports = {
 			zIndex: {
 				1: '1',
 				100: '100',
+			},
+			minHeight: {
+				154: '154px',
+				146: '146px',
+				212: '212px',
+				266: '266px',
 			},
 			minWidth: {
 				6: '1.5rem',
@@ -164,6 +175,7 @@ module.exports = {
 			},
 			boxShadow: {
 				'3xl': '0px 0px 50px 40px rgba(31, 11, 51, 0.5)',
+				'4xl': '0px 0px 20px rgb(20 20 46 / 5%)',
 			},
 			animation: {
 				marquee: 'marquee 25s linear infinite',
