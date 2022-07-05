@@ -1,15 +1,17 @@
-import { TransitionPresets, useTransition, useTimeoutFn } from '@vueuse/core'
+import { TransitionPresets, useTransition, useTimeoutFn, useMediaQuery } from '@vueuse/core'
 import { CSSProperties } from 'vue'
 
 export const useSphereLoadingAnimation = () => {
 	const menuStore = useMenuStore()
+
+	const isLargeScreen = useMediaQuery('(min-width: 1280px)')
 
 	const duration = 5000 // ms
 	const animationDuration = 3 // seconds
 	const textFadeDuration = 400 // ms
 	const logoFadeDuration = 700 // ms
 	const hideScreenDuration = 1400 // ms
-	const scaleTo = 6
+	const scaleTo = computed(() => (isLargeScreen.value ? 1.05 : 6))
 	const rotateTo = 360
 	const scaleFrom = ref(1)
 	const rotateFrom = ref(0)
@@ -22,6 +24,10 @@ export const useSphereLoadingAnimation = () => {
 
 	const { start } = useTimeoutFn(
 		() => {
+			if (isLargeScreen.value) {
+				menuStore.fixed = true
+			}
+
 			animationLoading.value = false
 		},
 		hideScreenDuration,
@@ -56,15 +62,15 @@ export const useSphereLoadingAnimation = () => {
 	const scaleTransition = useTransition(scaleFrom, {
 		duration,
 		transition: TransitionPresets.easeInOutQuint,
-		onFinished() {
-			// called after the transition ends
-			opacityTextFrom.value = opacityTextTo
-		},
 	})
 
 	const rotateTransition = useTransition(rotateFrom, {
 		duration,
 		transition: TransitionPresets.easeInOutQuint,
+		onFinished() {
+			// called after the transition ends
+			opacityTextFrom.value = opacityTextTo
+		},
 	})
 
 	const animationScaleStyle = computed<CSSProperties>(() => ({
@@ -82,7 +88,7 @@ export const useSphereLoadingAnimation = () => {
 	}))
 
 	onMounted(() => {
-		scaleFrom.value = scaleTo
+		scaleFrom.value = scaleTo.value
 		rotateFrom.value = rotateTo
 	})
 

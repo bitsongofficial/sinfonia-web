@@ -74,6 +74,10 @@
   .pause {
     animation-play-state: paused;
   }
+
+  .overflow-overlay {
+    overflow: overlay;
+  }
 }
 
 .fade-enter-active {

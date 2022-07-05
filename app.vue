@@ -10,8 +10,8 @@ provide('fantokensPlayer', fantokensPlayer)
 
 <template>
 	<NuxtLayout>
+		<Loading v-if="menuStore.loading || menuStore.fixed" />
 		<Navbar />
-		<Loading v-if="menuStore.loading" />
 
 		<Container>
 			<Grid class="xl:hidden">

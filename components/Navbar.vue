@@ -29,7 +29,7 @@ const onToggle = () => {
 </script>
 
 <template>
-	<div class="fixed xl:sticky xl:top-0 bottom-0 left-0 w-screen z-50 h-screen xl:h-auto pointer-events-none">
+	<div class="fixed xl:relative xl:top-0 bottom-0 left-0 w-screen z-50 h-screen xl:h-auto pointer-events-none">
 		<div
 			class="grid grid-rows-menuLayout h-full xl:h-auto relative"
 			:class="{

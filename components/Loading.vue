@@ -11,7 +11,7 @@ const {
 
 <template>
 	<div
-		class="bg-primary w-screen h-screen fixed top-0 left-0 z-50 transition-colors ease-in-out duration-700"
+		class="bg-primary xl:bg-transparent w-screen h-screen fixed xl:relative top-0 xl:top-auto left-0 xl:left-auto z-100 transition-colors xl:transition-none ease-in-out duration-700"
 		:class="{
 			'!bg-transparent': hideLoadingScreen,
 		}"
@@ -21,12 +21,14 @@ const {
 				<Header class="col-span-12 mt-16" :style="animationLogoOpacityStyle" no-blur />
 			</Grid>
 		</Container>
-		<Container class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
+		<Container
+			class="absolute top-1/2 xl:top-auto xl:bottom-21 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:translate-y-0 w-full xl:h-full"
+		>
 			<div
-				class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-7.5 w-73 md:w-110 xl:w-200 h-73 md:h-110 xl:h-200 -z-1"
+				class="absolute top-1/2 xl:top-auto xl:bottom-36 left-1/2 -translate-x-1/2 -translate-y-1/2 xl:translate-y-0 p-7.5 w-73 md:w-110 xl:w-200 h-73 md:h-110 xl:h-200 -z-1"
 			>
 				<BlurSphere
-					class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+					class="xl:w-105 xl:h-105 absolute top-1/2 xl:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
 					:style="animationTextOpacityStyle"
 				/>
 				<div class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" :style="animationScaleStyle">
@@ -42,7 +44,7 @@ const {
 			</div>
 			<Transition name="fade" mode="out-in" appear>
 				<div
-					class="text-2xl xl:text-4xl font-bold text-center text-radial-gradient-white z-50"
+					class="text-2xl xl:!text-4xl font-bold text-center text-radial-gradient-white z-50 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2"
 					v-if="!textAnimationCompleted"
 				>
 					<number
@@ -55,8 +57,12 @@ const {
 					<span>%</span>
 				</div>
 
-				<div class="text-center text-radial-gradient-white z-50" v-else :style="animationTextOpacityStyle">
-					<p class="!text-2xl xl:!text-6xl font-bold">Immerse yourself<br />by Activating the Sounds</p>
+				<div
+					class="text-center text-radial-gradient-white z-50 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2"
+					v-else
+					:style="animationTextOpacityStyle"
+				>
+					<p class="!text-2xl xl:!text-4xl font-bold">Immerse yourself<br />by Activating the Sounds</p>
 				</div>
 			</Transition>
 		</Container>

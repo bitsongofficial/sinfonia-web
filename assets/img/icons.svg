@@ -147,4 +147,8 @@
     <path d="M22.1373 13L15.9998 28L9.8623 13L15.9998 5L22.1373 13Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
     <path d="M2 13H30" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
   </symbol>
+  <symbol id="mouse" viewBox="0 0 20 31">
+    <line x1="10" y1="8" x2="10" y2="12" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M19 20.7727L19 10.2273C19 5.13119 14.9706 1 10 1C5.02944 0.999999 1 5.13119 1 10.2273L1 20.7727C1 25.8688 5.02944 30 10 30C14.9706 30 19 25.8688 19 20.7727Z" stroke="inherit" stroke-width="inherit" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
 </svg>
