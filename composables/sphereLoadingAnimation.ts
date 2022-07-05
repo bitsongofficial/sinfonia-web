@@ -128,5 +128,6 @@ export const useSphereLoadingAnimation = () => {
 		animationFixed,
 		textAnimationCompleted,
 		hideLoadingScreen,
+		isLargeScreen,
 	}
 }
