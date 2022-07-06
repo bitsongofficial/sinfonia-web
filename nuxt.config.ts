@@ -32,7 +32,7 @@ export default defineNuxtConfig({
 			countdownDate: '2022-07-10T22:00:00.000Z',
 			newsletter: {
 				apiUrl: 'https://mc.bitsong.io/',
-				listID: 'deaadbfbd5',
+				listID: 'd55c3fe099',
 			},
 		},
 	},
