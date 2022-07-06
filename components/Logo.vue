@@ -30,13 +30,10 @@ withDefaults(
 			alt="Sinfonia Logo"
 			title="Sinfonia Logo"
 		/>
-		<img
+		<LogoText
 			:class="{
 				'w-24': !vertical,
 			}"
-			:src="sinfoniaLogoText"
-			alt="Sinfonia Text"
-			title="Sinfonia Text"
 		/>
 	</div>
 </template>

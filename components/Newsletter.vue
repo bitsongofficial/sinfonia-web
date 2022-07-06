@@ -67,8 +67,10 @@ const onSubmit = handleSubmit(async () => {
 		>
 			<Input class="mb-4 md:mb-6 xl:mb-10" name="email" type="email" placeholder="Type your email address">
 				<template #bottom>
-					<p class="text-base text-success mt-2" v-if="success">Email successfully added to the newsletter.</p>
-					<p class="text-base text-error mt-2" v-if="error">An error occurred, please try again later.</p>
+					<div>
+						<p class="text-base text-success mt-2" v-if="success">Email successfully added to the newsletter.</p>
+						<p class="text-base text-error mt-2" v-if="error">An error occurred, please try again later.</p>
+					</div>
 				</template>
 			</Input>
 

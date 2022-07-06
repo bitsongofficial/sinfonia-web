@@ -31,21 +31,8 @@ const breakpoints: {
 			You can have much more
 		</h2>
 
-		<div class="col-span-12 xl:hidden">
-			<swiper
-				class="!overflow-visible"
-				:slides-per-view="1.02"
-				:space-between="24"
-				:grab-cursor="true"
-				:auto-height="true"
-				:centered-slides="true"
-				:centered-slides-bounds="true"
-				:breakpoints="breakpoints"
-			>
-				<swiper-slide v-for="(useCase, index) in useCases" :key="index" class="!h-full">
-					<UseCaseCard v-bind="useCase" class="h-full" />
-				</swiper-slide>
-			</swiper>
+		<div class="col-span-12 grid grid-cols-12 gap-6 xl:hidden">
+			<UseCaseCard v-for="(useCase, index) in useCases" :key="index" v-bind="useCase" class="col-span-12 md:col-span-6" />
 		</div>
 
 		<UseCasesMasonry class="hidden xl:grid col-span-12" :use-cases="useCases" />

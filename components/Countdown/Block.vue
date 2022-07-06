@@ -36,7 +36,7 @@ watch(
 
 <template>
 	<div
-		class="flex flex-col items-center justify-center rounded-medium bg-white/5 backdrop-blur-3xl shadow-4xl min-h-146 md:min-h-154 lg:min-h-212 xl:min-h-266"
+		class="flex flex-col items-center justify-center rounded-medium bg-white/5 shadow-4xl min-h-146 md:min-h-154 lg:min-h-212 xl:min-h-266"
 	>
 		<div class="flex overflow-hidden max-h-18.5 lg:max-h-24.5 xl:max-h-34">
 			<transition name="translate" mode="out-in">

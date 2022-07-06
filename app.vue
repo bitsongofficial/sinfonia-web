@@ -16,7 +16,7 @@ provide('fantokensPlayer', fantokensPlayer)
 <template>
 	<NuxtLayout>
 		<Loading v-show="menuStore.loading || (menuStore.fixed && isLargeScreen)" />
-		<Navbar />
+		<!-- <Navbar /> -->
 
 		<Container>
 			<Grid class="xl:hidden">
