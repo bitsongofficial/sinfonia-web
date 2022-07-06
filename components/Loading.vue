@@ -33,7 +33,7 @@ const {
 					class="xl:w-105 xl:h-105 absolute top-1/2 xl:top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2"
 					:style="!isLargeScreen ? animationTextOpacityStyle : null"
 				/>
-				<LogoText class="hidden xl:block absolute xl:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-60" />
+				<LogoText class="hidden xl:block absolute xl:top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 w-60" />
 				<div class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" :style="animationScaleStyle">
 					<div class="w-full h-full xl:animate-spin-slow" :style="animationScaleStyle">
 						<MediumOrb class="absolute top-9 md:top-15 xl:top-36 left-9 md:left-15 xl:left-36 -rotate-45" />
