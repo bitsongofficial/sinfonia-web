@@ -61,7 +61,7 @@ const onToggle = () => {
 					<div class="flex flex-row items-center justify-between pt-7.5 xl:pt-0 pb-13.5 xl:pb-0">
 						<Logo :vertical="false" class="hidden xl:flex" />
 
-						<div class="flex flex-row items-center">
+						<!-- <div class="flex flex-row items-center">
 							<Icon
 								class="w-7.5 h-7.5 stroke-2 stroke-grey opacity-30 fill-transparent transition mr-4"
 								:class="{
@@ -71,7 +71,7 @@ const onToggle = () => {
 							/>
 
 							<Toggle name="audio" v-model="volumeActive" @update:modelValue="onToggle" :default-value="true" />
-						</div>
+						</div> -->
 
 						<MenuButton @click="menuOpen = !menuOpen" :open="menuOpen" class="xl:hidden" />
 					</div>

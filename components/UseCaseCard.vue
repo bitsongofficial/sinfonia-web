@@ -15,8 +15,10 @@ defineProps<{
 			<Icon :name="icon" class="min-w-6 w-6 h-6 stroke-secondary stroke-2 fill-transparent" />
 		</div>
 
-		<p class="!text-tiny xl:!text-base text-white/50 mb-6 mt-auto">{{ subtitle }}</p>
+		<p class="!text-tiny xl:!text-base text-white/50 mt-auto">{{ subtitle }}</p>
 
-		<label class="text-xs xl:text-tiny text-secondary font-medium uppercase">{{ label }}</label>
+		<!-- <p class="!text-tiny xl:!text-base text-white/50 mb-6 mt-auto">{{ subtitle }}</p> -->
+
+		<!-- <label class="text-xs xl:text-tiny text-secondary font-medium uppercase">{{ label }}</label> -->
 	</Card>
 </template>
