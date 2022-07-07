@@ -22,7 +22,7 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<Loading v-show="menuStore.loading || (menuStore.fixed && isLargeScreen)" />
+		<!-- <Loading v-show="menuStore.loading || (menuStore.fixed && isLargeScreen)" /> -->
 		<!-- <Navbar /> -->
 
 		<Container>
