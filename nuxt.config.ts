@@ -31,6 +31,91 @@ export default defineNuxtConfig({
 				name: 'viewport',
 				content: 'width=device-width, initial-scale=1',
 			},
+			{
+				hid: 'keywords',
+				name: 'keywords',
+				content: 'Artist, Fan, $BTSG, Labels, Crypto, Buy, Swap, Sell, Music, Trading, Blockchain, Sinfonia',
+			},
+			{
+				hid: 'description',
+				name: 'description',
+				content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			},
+			{
+				hid: 'og:site_name',
+				property: 'og:site_name',
+				content: 'Sinfonia',
+			},
+			{
+				hid: 'og:title',
+				name: 'og:title',
+				content: 'Sinfonia',
+			},
+			{
+				hid: 'og:description',
+				name: 'og:description',
+				content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			},
+			{
+				hid: 'og:type',
+				property: 'og:type',
+				content: 'website',
+			},
+			{
+				hid: 'og:url',
+				name: 'og:url',
+				content: 'https://www.sinfonia.zone/',
+			},
+			{
+				hid: 'og:image',
+				name: 'og:image',
+				content: 'https://www.sinfonia.zone/cover.jpeg',
+			},
+			{
+				hid: 'og:image:width',
+				name: 'og:image:width',
+				content: '2220',
+			},
+			{
+				hid: 'og:image:height',
+				name: 'og:image:height',
+				content: '1186',
+			},
+			{
+				hid: 'twitter:card',
+				name: 'twitter:card',
+				content: 'summary_large_image',
+			},
+			{
+				hid: 'twitter:site',
+				name: 'twitter:site',
+				content: '@sinfoniazone',
+			},
+			{
+				hid: 'twitter:title',
+				name: 'twitter:title',
+				content: 'Sinfonia',
+			},
+			{
+				hid: 'twitter:description',
+				name: 'twitter:description',
+				content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			},
+			{
+				hid: 'twitter:creator',
+				name: 'twitter:creator',
+				content: '@sinfoniazone',
+			},
+			{
+				hid: 'twitter:image',
+				name: 'twitter:image',
+				content: 'https://www.sinfonia.zone/cover.jpeg',
+			},
+			{
+				hid: 'twitter:image:alt',
+				name: 'twitter:image:alt',
+				content: 'Sinfonia',
+			},
 		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '@/public/favicon.ico' }],
 	},
