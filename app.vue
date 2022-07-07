@@ -73,7 +73,7 @@ useHead({
 				<!-- <PartnersSection class="col-span-12 mb-40 md:mb-44 lg:mb-52 xl:mb-64 2xl:mb-96" /> -->
 			</Grid>
 
-			<Footer class="mb-40 md:mb-29 lg:mb-20 xl:mb-36 2xl:mb-39" />
+			<!-- <Footer class="mb-40 md:mb-29 lg:mb-20 xl:mb-36 2xl:mb-39" /> -->
 		</Container>
 	</NuxtLayout>
 </template>
