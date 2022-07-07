@@ -130,6 +130,10 @@ export default defineNuxtConfig({
 				apiUrl: 'https://mc.bitsong.io/',
 				listID: 'd55c3fe099',
 			},
+			analytics: {
+				appName: 'Sinfonia Web',
+				measurementID: 'G-R3N4BYQW2T',
+			},
 		},
 	},
 })
