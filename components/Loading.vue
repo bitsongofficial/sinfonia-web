@@ -12,7 +12,7 @@ const {
 
 <template>
 	<div
-		class="bg-primary xl:bg-transparent w-screen h-screen fixed xl:relative top-0 xl:top-auto left-0 xl:left-auto z-100 transition-colors xl:transition-none ease-in-out duration-700"
+		class="bg-primary xl:bg-transparent w-screen h-screen xl:min-h-[860px] fixed xl:relative top-0 xl:top-auto left-0 xl:left-auto z-100 transition-colors xl:transition-none ease-in-out duration-700"
 		:class="{
 			'!bg-transparent': hideLoadingScreen,
 		}"
