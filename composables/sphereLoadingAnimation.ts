@@ -11,10 +11,6 @@ export const useSphereLoadingAnimation = () => {
 	const textFadeDuration = ref(400) // ms
 	const logoFadeDuration = ref(700) // ms
 	const hideScreenDuration = ref(1400) // ms
-	const scaleTo = computed(() => (isLargeScreen.value ? 1.05 : 6))
-	const rotateTo = 360
-	const scaleFrom = ref(1)
-	const rotateFrom = ref(0)
 	const hideLoadingScreen = ref(false)
 	const opacityTextTo = 0
 	const opacityTextFrom = ref(1)
@@ -66,25 +62,15 @@ export const useSphereLoadingAnimation = () => {
 		},
 	})
 
-	const scaleTransition = useTransition(scaleFrom, {
-		duration,
-		transition: TransitionPresets.easeInOutQuint,
-	})
-
-	const rotateTransition = useTransition(rotateFrom, {
-		duration,
-		transition: TransitionPresets.easeInOutQuint,
-		onFinished() {
-			// called after the transition ends
+	const { start: startLoading } = useTimeoutFn(
+		() => {
 			opacityTextFrom.value = opacityTextTo
 		},
-	})
-
-	const animationScaleStyle = computed<CSSProperties>(() => ({
-		'--tw-scale-x': scaleTransition.value,
-		'--tw-scale-y': scaleTransition.value,
-		'--tw-rotate': !isLargeScreen.value ? `${rotateTransition.value}deg` : '',
-	}))
+		duration,
+		{
+			immediate: false,
+		}
+	)
 
 	const animationTextOpacityStyle = computed<CSSProperties>(() => ({
 		opacity: opacityTextTransition.value,
@@ -104,8 +90,6 @@ export const useSphereLoadingAnimation = () => {
 					textFadeDuration.value = 0
 					logoFadeDuration.value = 0
 					hideScreenDuration.value = 0
-					scaleFrom.value = 1.05
-					rotateFrom.value = 0
 					animationFixed.value = true
 				} else {
 					animationFixed.value = false
@@ -115,14 +99,12 @@ export const useSphereLoadingAnimation = () => {
 	)
 
 	onMounted(() => {
-		scaleFrom.value = scaleTo.value
-		rotateFrom.value = rotateTo
+		startLoading()
 	})
 
 	return {
 		animationLogoOpacityStyle,
 		animationTextOpacityStyle,
-		animationScaleStyle,
 		animationDuration,
 		animationLoading,
 		animationFixed,

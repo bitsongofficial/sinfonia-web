@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-	<Card class="flex flex-col backdrop-blur-0 shadow-3xl !drop-shadow-none xl:px-10.5 !bg-white/5 !bg-none">
+	<Card class="flex flex-col backdrop-blur-0 shadow-3xl !drop-shadow-none xl:px-10.5 !bg-white/5 !bg-none" :bg="false">
 		<div class="flex flex-row justify-between items-center gap-x-2 mb-8 xl:mb-11">
 			<h5 class="!text-p1 xl:!text-1.5xl !leading-none font-medium text-white">{{ title }}</h5>
 
