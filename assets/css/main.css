@@ -38,6 +38,10 @@
       radial-gradient(49.86% 319.81% at 28.6% 0%, theme(colors.white) 0%, theme(colors.white / 0%) 100%);
   }
 
+  .bg-alternative-radial-gradient-white {
+    background: radial-gradient(18.81% 269.16% at 81.41% 10.58%, theme(colors.white) 0, theme(colors.white / 0%) 100%), radial-gradient(49.86% 360.81% at 28.6% 0,theme(colors.white) 0, theme(colors.white / 20%) 100%)
+  }
+
   .bg-radial-gradient-white {
     background: radial-gradient(100% 100% at 0% 0%,  theme(colors.white / 12%) 0%, theme(colors.white / 3%) 100%)
   }
@@ -51,6 +55,10 @@
 
   .text-radial-gradient-white {
     @apply bg-double-radial-gradient-white text-gradient-base;
+  }
+
+  .text-alternative-radial-gradient-white {
+    @apply bg-alternative-radial-gradient-white text-gradient-base;
   }
 
   .text-l-gradient-secondary {

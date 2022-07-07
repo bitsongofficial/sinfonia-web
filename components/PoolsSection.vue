@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import pools from '@/assets/img/pools.svg?url'
-import poolsMobile from '@/assets/img/pools-mobile.svg?url'
+import pools from '@/assets/img/pools.png?url'
+import poolsMobile from '@/assets/img/pools_mobile.png?url'
 </script>
 
 <template>

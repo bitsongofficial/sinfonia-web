@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import swap from '@/assets/img/swap.svg?url'
+import swap from '@/assets/img/swap.png?url'
 </script>
 
 <template>

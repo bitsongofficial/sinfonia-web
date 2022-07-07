@@ -181,8 +181,18 @@ module.exports = {
 				marquee: 'marquee 25s linear infinite',
 				marquee2: 'marquee2 25s linear infinite',
 				'spin-slow': 'spin 40s ease-in-out infinite',
+				'scale-slow': 'scale-slow 5s cubic-bezier(0.83, 0, 0.17, 1) forwards',
+				'spin-rotate': 'spin-rotate 5s cubic-bezier(0.83, 0, 0.17, 1) forwards',
 			},
 			keyframes: {
+				'scale-slow': {
+					'0%': { transform: 'scale(1)' },
+					'100%': { transform: 'scale(1.05)' },
+				},
+				'spin-rotate': {
+					'0%': { transform: 'scale(1) rotate(0)' },
+					'100%': { transform: 'scale(6) rotate(360deg)' },
+				},
 				marquee: {
 					'0%': { transform: 'translateX(0%)' },
 					'100%': { transform: 'translateX(-100%)' },

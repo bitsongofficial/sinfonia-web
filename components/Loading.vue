@@ -1,6 +1,5 @@
 <script lang="ts" setup>
 const {
-	animationScaleStyle,
 	animationDuration,
 	textAnimationCompleted,
 	animationTextOpacityStyle,
@@ -34,8 +33,8 @@ const {
 					:style="!isLargeScreen ? animationTextOpacityStyle : null"
 				/>
 				<LogoText class="hidden xl:block absolute xl:top-1/2 left-1/2 -translate-x-1/2 translate-y-1/2 w-60" />
-				<div class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" :style="animationScaleStyle">
-					<div class="w-full h-full xl:animate-spin-slow" :style="animationScaleStyle">
+				<div class="w-full h-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+					<div class="w-full h-full animate-spin-rotate xl:animate-scale-slow xl:animate-spin-slow">
 						<MediumOrb class="absolute top-9 md:top-15 xl:top-36 left-9 md:left-15 xl:left-36 -rotate-45" />
 						<MediumOrb class="absolute top-0 left-1/2 -translate-x-1/2" />
 						<MediumOrb class="absolute top-9 md:top-15 xl:top-36 right-9 md:right-15 xl:right-36 rotate-45" />
@@ -63,7 +62,7 @@ const {
 				</div>
 
 				<div
-					class="text-center text-radial-gradient-white z-50 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2"
+					class="text-center text-radial-gradient-white lg:text-alternative-radial-gradient-white z-50 xl:absolute xl:bottom-0 xl:left-1/2 xl:-translate-x-1/2"
 					v-else
 					:style="animationTextOpacityStyle"
 				>
