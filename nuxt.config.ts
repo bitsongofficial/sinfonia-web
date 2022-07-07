@@ -21,6 +21,17 @@ export default defineNuxtConfig({
 	},
 	css: ['@/assets/css/typography.css', '@/assets/css/main.css'],
 	head: {
+		charset: 'utf-8',
+		meta: [
+			{
+				name: 'theme-color',
+				content: '#1B0929',
+			},
+			{
+				name: 'viewport',
+				content: 'width=device-width, initial-scale=1',
+			},
+		],
 		link: [{ rel: 'icon', type: 'image/x-icon', href: '@/public/favicon.ico' }],
 	},
 	vite: {

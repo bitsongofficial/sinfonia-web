@@ -11,6 +11,13 @@ const menuStore = useMenuStore()
 const fantokensPlayer = ref<InstanceType<typeof FantokensPlayerVue> | null>()
 
 provide('fantokensPlayer', fantokensPlayer)
+
+useHead({
+	title: 'Sinfonia',
+	htmlAttrs: {
+		lang: 'en',
+	},
+})
 </script>
 
 <template>
