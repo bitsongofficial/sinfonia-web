@@ -66,7 +66,7 @@ useHead({
 					</template>
 				</Button>
 
-				<!-- <UseCasesSection class="col-span-12 mb-35" /> -->
+				<UseCasesSection class="col-span-12 mb-35" />
 
 				<Newsletter :list-id="config.public.newsletter.listID" class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" />
 
