@@ -27,7 +27,7 @@ import swap from '@/assets/img/swap.png?url'
 		<div
 			class="col-span-12 md:col-span-8 xl:col-span-5 md:col-start-3 xl:row-start-1 xl:col-start-7 lg:mx-7 xl:mx-0 2xl:mr-11.5"
 		>
-			<img :src="swap" class="w-full" alt="Swap Component" title="Swap Component" />
+			<img :src="swap" class="w-full" alt="Swap Component" title="Swap Component" width="600px" height="300px" />
 		</div>
 	</Grid>
 </template>

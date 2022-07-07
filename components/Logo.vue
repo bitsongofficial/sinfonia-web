@@ -29,6 +29,8 @@ withDefaults(
 			:src="sinfoniaLogo"
 			alt="Sinfonia Logo"
 			title="Sinfonia Logo"
+			width="52px"
+			height="52px"
 		/>
 		<LogoText
 			:class="{

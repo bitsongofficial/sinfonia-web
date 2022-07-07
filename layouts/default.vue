@@ -1,10 +1,9 @@
 <script lang="ts" setup>
 const menuStore = useMenuStore()
 
-/* const bodyClasses = computed(
+const bodyClasses = computed(
 	() => `bg-primary overflow-overlay ${menuStore.open || menuStore.loading ? '!overflow-hidden' : ''}`
-) */
-const bodyClasses = computed(() => `bg-primary overflow-overlay`)
+)
 
 onMounted(() => {
 	if (process.client && window) {

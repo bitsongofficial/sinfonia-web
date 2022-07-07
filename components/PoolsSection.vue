@@ -27,8 +27,22 @@ import poolsMobile from '@/assets/img/pools_mobile.png?url'
 		<div
 			class="col-span-12 md:col-span-8 xl:col-span-5 md:col-start-3 xl:row-start-1 xl:col-start-2 lg:mx-7 xl:mx-0 2xl:ml-10"
 		>
-			<img class="hidden md:block" :src="pools" alt="Pools Component" title="Pools Component" />
-			<img class="md:hidden w-full" :src="poolsMobile" alt="Pools Component" title="Pools Component" />
+			<img
+				class="hidden md:block"
+				:src="pools"
+				alt="Pools Component"
+				title="Pools Component"
+				width="624px"
+				height="382px"
+			/>
+			<img
+				class="md:hidden w-full"
+				:src="poolsMobile"
+				alt="Pools Component"
+				title="Pools Component"
+				width="314px"
+				height="196px"
+			/>
 		</div>
 	</Grid>
 </template>
