@@ -29,12 +29,12 @@ useHead({
 		{
 			hid: 'keywords',
 			name: 'keywords',
-			content: 'Artist, Fan, $BTSG, Labels, Crypto, Buy, Swap, Sell, Music, Trading, Blockchain, Sinfonia',
+			content: 'music, blockchain, crypto, music, fantokens, swap, airdrop, sell, trading, sinfonia, nfts',
 		},
 		{
 			hid: 'description',
 			name: 'description',
-			content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			content: 'Your Music FanToken Marketplace powered by BitSong',
 		},
 		{
 			hid: 'og:site_name',
@@ -44,12 +44,12 @@ useHead({
 		{
 			hid: 'og:title',
 			name: 'og:title',
-			content: 'Sinfonia',
+			content: 'FanToken Music Marketplace',
 		},
 		{
 			hid: 'og:description',
 			name: 'og:description',
-			content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			content: 'Your Music FanToken Marketplace powered by BitSong',
 		},
 		{
 			hid: 'og:type',
@@ -94,7 +94,7 @@ useHead({
 		{
 			hid: 'twitter:description',
 			name: 'twitter:description',
-			content: 'Your Music FanToken Marketplace powered by BitSong on Osmosis',
+			content: 'Your Music FanToken Marketplace powered by BitSong',
 		},
 		{
 			hid: 'twitter:creator',
