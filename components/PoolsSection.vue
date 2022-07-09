@@ -20,7 +20,7 @@ import poolsMobile from '@/assets/img/pools_mobile.png?url'
 			<p
 				class="text-white/30 text-tiny md:text-base lg:text-lg xl:text-base 2xl:text-p2 text-center xl:text-right lg:px-10 xl:px-0"
 			>
-				Become a Liquidity provider by participating in your favorite artists' pools and receive daily rewards.
+				Provide liquidity in your favorite artists pools and get automatic daily rewards.
 			</p>
 		</div>
 

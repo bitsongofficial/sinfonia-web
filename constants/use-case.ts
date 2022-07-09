@@ -1,8 +1,8 @@
 export const useCases = [
 	{
-		title: 'Polls',
+		title: 'Pools',
 		subtitle:
-			"Participate in your favorite Artists' decisions about their private or musical lives by answering simple surveys.",
+			'Own the FanToken of your favorite artists and decide together with them by voting options on their proposals.',
 		label: 'Q2 2022',
 		icon: 'chart-bar',
 	},
@@ -57,7 +57,7 @@ export const useCases = [
 	},
 	{
 		title: 'NFTs',
-		subtitle: 'Collects unique works of art. Issue autographs and signed photographs, gig tickets and much more',
+		subtitle: 'Collect unique works of art.\nGet autographs or signed media, gig tickets or playlists.\nSky is the limit',
 		label: 'Q2 2022',
 		icon: 'sketch',
 	},

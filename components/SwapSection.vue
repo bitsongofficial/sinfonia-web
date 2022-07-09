@@ -19,8 +19,9 @@ import swap from '@/assets/img/swap.png?url'
 			<p
 				class="text-white/30 text-tiny md:text-base lg:text-lg xl:text-base 2xl:text-p2 text-center xl:text-left lg:px-10 xl:px-0"
 			>
-				Swapping Artists' Fantokens has never been easier. Each artist, one coin.<br />
-				Collect them and swap them as you prefer.
+				Transacting Music FanTokens is now a reality.<br />
+				One Brand, One Token.<br />
+				Collect, invest, swap, play or vote.
 			</p>
 		</div>
 

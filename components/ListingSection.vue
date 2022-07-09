@@ -16,7 +16,8 @@
 			<p
 				class="text-white/30 text-tiny md:text-base lg:text-lg xl:text-base 2xl:text-p2 text-center xl:text-right lg:px-10 xl:px-0"
 			>
-				Artists, Record Labels, Clubs & Festivals. Discorver more Fan Tokens and find out the opportunities they offer.
+				Artists, Record Labels, Digital Distributors, Clubs & Festivals. Explore the FanTokens and find out their long-term
+				vision and the opportunities they offer.
 			</p>
 		</div>
 
