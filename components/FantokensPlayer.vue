@@ -39,6 +39,7 @@ const onFantokenChange = (isPlaying: boolean, index: number) => {
 		audioPlayer.value.currentTime = 0
 
 		if (audioStore.playableTrack) {
+			audioPlayer.value.load()
 			audioPlayer.value.play()
 		}
 	}

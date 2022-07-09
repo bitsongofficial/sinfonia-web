@@ -129,12 +129,14 @@ useHead({
 
 			<CountdownSection :date="config.public.countdownDate" class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
 
-			<!-- <FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" /> -->
+			<Grid>
+				<!-- <FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" /> -->
 
-			<!-- <FantokensPlayer
+				<FantokensPlayer
 					ref="fantokensPlayer"
 					class="col-span-12 md:col-span-11 md:col-start-2 mb-43 md:mb-40 lg:mb-49 xl:mb-45 2xl:mb-36"
-				/> -->
+				/>
+			</Grid>
 
 			<Newsletter :list-id="config.public.newsletter.listID" class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" v-once />
 
@@ -166,7 +168,7 @@ useHead({
 
 			<Newsletter :list-id="config.public.newsletter.listID" class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" v-once />
 
-			<!-- <PartnersSection class="col-span-12 mb-40 md:mb-44 lg:mb-52 xl:mb-64 2xl:mb-96" /> -->
+			<PartnersSection class="col-span-12 mb-40 md:mb-44 lg:mb-52 xl:mb-64 2xl:mb-96" />
 
 			<Footer class="mb-40 md:mb-29 lg:mb-20 xl:mb-36 2xl:mb-39" v-once />
 		</Container>

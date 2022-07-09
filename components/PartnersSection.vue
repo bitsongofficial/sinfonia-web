@@ -1,7 +1,7 @@
 <script lang="ts" setup>
-import engie from '@/assets/img/engie.svg?url'
 import { SwiperOptions } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/vue'
+import { partners } from '@/constants'
 
 import 'swiper/css'
 
@@ -39,11 +39,24 @@ const breakpoints: {
 	<Grid tag="section">
 		<h5 class="col-span-12 text-white/20 font-bold mb-3 lg:mb-4 xl:mb-8 2xl:mb-9 text-center">DEFi at your service</h5>
 		<h2 class="col-span-12 lg:col-span-10 lg:col-start-2 text-white text-center font-bold mb-16 lg:mb-20 2xl:mb-30">
-			Partners
+			Partner
 		</h2>
 
-		<div class="col-span-12 md:col-span-10 md:col-start-2">
-			<swiper
+		<div
+			class="col-span-8 col-start-3 md:col-span-6 md:col-start-4 lg:col-span-4 lg:col-start-5"
+			v-for="(partner, index) in partners"
+			:key="index"
+		>
+			<a
+				:key="index"
+				class="w-full h-auto opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200"
+				target="_blank"
+				:href="partner.href"
+				rel="external"
+			>
+				<img class="w-full h-auto" :src="partner.img" :alt="partner.name" :title="partner.name" />
+			</a>
+			<!-- <swiper
 				class="!overflow-visible"
 				:slides-per-view="1.8"
 				:centered-slides="true"
@@ -52,28 +65,17 @@ const breakpoints: {
 				:breakpoints="breakpoints"
 				:grab-cursor="true"
 			>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
+				<swiper-slide v-for="(partner, index) in partners" :key="index">
+					<a
+						class="w-full h-auto opacity-20 grayscale hover:opacity-100 hover:grayscale-0 transition-all duration-200"
+						target="_blank"
+						:href="partner.href"
+						rel="external"
+					>
+						<img class="w-full h-auto" :src="partner.img" :alt="partner.name" :title="partner.name" />
+					</a>
 				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-				<swiper-slide>
-					<img class="w-full h-auto opacity-20" :src="engie" alt="engie" title="engie" />
-				</swiper-slide>
-			</swiper>
+			</swiper> -->
 		</div>
 	</Grid>
 </template>

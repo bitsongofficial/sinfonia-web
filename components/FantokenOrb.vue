@@ -40,19 +40,19 @@ const onClick = () => {
 				></div>
 			</div>
 			<img
-				class="w-24.5 md:w-25 lg:w-29 xl:w-40 2xl:w-52 h-auto object-cover relative z-auto"
+				class="w-24.5 md:w-25 lg:w-29 xl:w-40 2xl:w-52 h-auto object-cover relative z-auto rounded-full"
 				:src="img"
 				:alt="name"
 				:title="name"
 			/>
 		</div>
 		<figcaption
-			class="text-base md:text-p1 lg:text-basexl 2xl:text-2xl font-medium text-white mb-1 md:mb-3 lg:mb-4 xl:mb-3 2xl:mb-3.5 capitalize"
+			class="text-base md:text-p1 lg:text-basexl 2xl:text-2xl font-medium text-white mb-1 md:mb-3 lg:mb-4 xl:mb-3 2xl:mb-3.5 capitalize text-center"
 		>
 			{{ name }}
 		</figcaption>
 		<p
-			class="text-xs lg:text-tiny xl:text-xs 2xl:text-base font-medium text-red uppercase absolute -bottom-3 translate-y-2/4 transform-gpu"
+			class="text-xs lg:text-tiny xl:text-xs 2xl:text-base font-medium text-red uppercase absolute -bottom-3 translate-y-2/4 transform-gpu text-center"
 			v-if="playing"
 		>
 			{{ role }}
