@@ -22,5 +22,12 @@ const time = computed(() => new Date(propsInt.date).getTime() - new Date().getTi
 				</vue-countdown>
 			</ClientOnly>
 		</div>
+
+		<h5
+			class="col-span-12 md:col-span-10 md:col-start-2 xl:col-span-8 xl:col-start-3 font-regular text-white/30 text-center mt-10 lg:mt-14 xl:mt-16 2xl:mt-21"
+		>
+			The Sinfonia DApp launch is scheduled at 4pm UTC, 2 hours after the BitSong Blockchain Upgrade.<br />
+			The launch time may vary according to the achievement of the consensus during the upgrade.
+		</h5>
 	</Grid>
 </template>
