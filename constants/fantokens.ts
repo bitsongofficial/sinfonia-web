@@ -73,8 +73,8 @@ export const fantokens: Fantoken[] = [
 		track: rawanne,
 	},
 	{
-		name: 'Blackjack',
-		role: 'Artist',
+		name: 'BlackJack',
+		role: 'Label',
 		img: blackjackToken,
 		track: blackjack,
 	},

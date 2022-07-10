@@ -24,7 +24,7 @@ onMounted(() => {
 		<p
 			class="col-span-12 md:col-span-10 md:col-start-2 font-regular text-white/30 text-center mb-14 md:mb-8 lg:mb-16 xl:mb-32 2xl:mb-20"
 		>
-			The Fan Token Platform built to enrich the Artists and Fans Relationship.<br class="md:hidden" />
+			The FanToken Platform built to enrich the Artists and Fans Relationship.<br class="md:hidden" />
 			Loyalty is what you always deserved.
 		</p>
 
