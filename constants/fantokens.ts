@@ -35,6 +35,10 @@ import n43 from '@/assets/audio/n43.mp3?url'
 import dr404Token from '@/assets/img/tokens/404-deep-records.jpeg?url'
 import dr404 from '@/assets/audio/404dr.mp3?url'
 
+import enmodaToken from '@/assets/img/tokens/enmoda.jpeg?url'
+
+import nicolaFasanoToken from '@/assets/img/tokens/nicola-fasano.jpeg?url'
+
 export const fantokens: Fantoken[] = [
 	{
 		name: 'Adam Clay',
@@ -107,5 +111,15 @@ export const fantokens: Fantoken[] = [
 		role: 'Label',
 		img: dr404Token,
 		track: dr404,
+	},
+	{
+		name: 'Nicola Fasano',
+		role: 'Artist',
+		img: nicolaFasanoToken,
+	},
+	{
+		name: 'Enmoda',
+		role: 'Magazine',
+		img: enmodaToken,
 	},
 ]

@@ -4,6 +4,7 @@ const props = withDefaults(
 		name: string
 		role: string
 		img: string
+		track?: string
 		playing?: boolean
 		otherPlaying?: boolean
 	}>(),
@@ -18,7 +19,9 @@ const emits = defineEmits<{
 }>()
 
 const onClick = () => {
-	emits('update:playing', !props.playing)
+	if (props.track) {
+		emits('update:playing', !props.playing)
+	}
 }
 </script>
 
@@ -27,6 +30,7 @@ const onClick = () => {
 		class="flex flex-col items-center cursor-pointer relative transition-opacity duration-500 ease-in-out"
 		:class="{
 			'opacity-20': otherPlaying && !playing,
+			'!cursor-not-allowed': !track,
 		}"
 		@click="onClick"
 	>
