@@ -33,7 +33,7 @@ const onClick = (option: MenuOption) => {
 			</li>
 		</ul>
 
-		<Button disabled class="col-span-8 md:col-span-4 col-start-3 md:col-start-5 mx-auto" href="https://app.sinfonia.zone">
+		<Button class="col-span-8 md:col-span-4 col-start-3 md:col-start-5 mx-auto" href="https://app.sinfonia.zone">
 			launch app
 			<template #right>
 				<Icon

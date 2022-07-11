@@ -127,7 +127,7 @@ useHead({
 
 			<IntroSection class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
 
-			<CountdownSection :date="config.public.countdownDate" class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
+			<!-- <CountdownSection :date="config.public.countdownDate" class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" /> -->
 
 			<Grid>
 				<!-- <FantokensSection class="col-span-12 md:col-span-10 md:col-start-2 mb-35 md:mb-45 lg:mb-71 xl:mb-56 2xl:mb-59" /> -->
@@ -150,7 +150,6 @@ useHead({
 
 			<Grid>
 				<Button
-					disabled
 					class="col-span-8 md:col-span-4 col-start-3 md:col-start-5 mx-auto mb-35 md:mb-32 lg:mb-35 xl:mb-71 2xl:mb-59"
 					href="https://app.sinfonia.zone"
 				>
