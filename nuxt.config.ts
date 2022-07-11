@@ -125,7 +125,7 @@ export default defineNuxtConfig({
 	modules: ['@pinia/nuxt'],
 	runtimeConfig: {
 		public: {
-			countdownDate: '2022-07-11T18:30:00.000Z',
+			countdownDate: '2022-07-11T19:00:00.000Z',
 			newsletter: {
 				apiUrl: 'https://mc.bitsong.io/',
 				listID: 'd55c3fe099',
