@@ -28,7 +28,7 @@ import poolsMobile from '@/assets/img/pools_mobile.png?url'
 			class="col-span-12 md:col-span-8 xl:col-span-5 md:col-start-3 xl:row-start-1 xl:col-start-2 lg:mx-7 xl:mx-0 2xl:ml-10"
 		>
 			<img
-				class="hidden md:block"
+				class="hidden md:block w-full"
 				:src="pools"
 				alt="Pools Component"
 				title="Pools Component"
