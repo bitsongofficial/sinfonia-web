@@ -16,7 +16,7 @@ onMounted(() => {
 		/>
 
 		<h1
-			class="col-span-12 lg:col-span-10 lg:col-start-2 font-bold text-center text-radial-gradient-white lg:text-alternative-radial-gradient-white mb-6 md:mb-8 xl:mb-11.5 xl:mt-48 2xl:mt-40"
+			class="col-span-12 lg:col-span-10 lg:col-start-2 font-bold text-center text-radial-gradient-white lg:text-alternative-radial-gradient-white mb-6 md:mb-8 xl:mb-11.5 xl:mt-24 2xl:mt-20 sm:mt-20"
 		>
 			Music 3.0 is yours.<br />Welcome to FanToken!
 		</h1>

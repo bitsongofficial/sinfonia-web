@@ -117,12 +117,10 @@ useHead({
 
 <template>
 	<NuxtLayout>
-		<Loading v-show="menuStore.loading || (menuStore.fixed && isLargeScreen)" />
 		<!-- <Navbar /> -->
-
 		<Container>
-			<Grid class="xl:hidden">
-				<Header class="col-span-12 mt-16 mb-28 md:mb-33 lg:mb-36"></Header>
+			<Grid>
+				<Header class="col-span-12 mt-8"></Header>
 			</Grid>
 
 			<IntroSection class="mb-20 lg:mb-25 xl:mb-32 2xl:mb-49" />
@@ -166,8 +164,6 @@ useHead({
 			<UseCasesSection class="col-span-12 mb-35" v-once />
 
 			<Newsletter :list-id="config.public.newsletter.listID" class="col-span-12 mb-35 md:mb-28 lg:mb-35 xl:mb-64" v-once />
-
-			<PartnersSection class="col-span-12 mb-40 md:mb-44 lg:mb-52 xl:mb-64 2xl:mb-96" />
 
 			<Footer class="mb-40 md:mb-29 lg:mb-20 xl:mb-36 2xl:mb-39" v-once />
 		</Container>

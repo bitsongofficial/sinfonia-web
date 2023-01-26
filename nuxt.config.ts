@@ -1,4 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
 import svgLoader from 'vite-svg-loader'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
@@ -9,16 +8,13 @@ export default defineNuxtConfig({
 			types: ['@pinia/nuxt'],
 		},
 	},
-	build: {
-		postcss: {
-			postcssOptions: {
-				plugins: {
-					tailwindcss: {},
-					autoprefixer: {},
-				},
-			},
+	postcss: {
+		plugins: {
+			tailwindcss: {},
+			autoprefixer: {},
 		},
 	},
+	build: {},
 	css: ['@/assets/css/typography.css', '@/assets/css/main.css'],
 	head: {
 		charset: 'utf-8',

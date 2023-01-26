@@ -16,7 +16,7 @@ withDefaults(
 	<div
 		class="flex items-center h-auto"
 		:class="{
-			'flex-col w-20': vertical,
+			'flex-col w-40': vertical,
 			'flex-row': !vertical,
 		}"
 	>
@@ -29,8 +29,8 @@ withDefaults(
 			:src="sinfoniaLogo"
 			alt="Sinfonia Logo"
 			title="Sinfonia Logo"
-			width="80px"
-			height="52px"
+			width="320px"
+			height="208px"
 		/>
 		<LogoText
 			:class="{

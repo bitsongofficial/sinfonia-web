@@ -12,6 +12,6 @@ withDefaults(
 <template>
 	<div class="flex justify-center relative">
 		<BlurSphere class="absolute -top-28 md:-top-36" v-if="!noBlur" />
-		<Logo class="relative z-40" />
+		<Logo />
 	</div>
 </template>
