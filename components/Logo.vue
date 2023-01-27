@@ -26,11 +26,11 @@ withDefaults(
 				'mb-5 px-3.5': vertical,
 				'mr-9 w-15': !vertical,
 			}"
-			:src="sinfoniaLogo"
+			src="@/assets/img/sinfonia-logo.svg?url"
 			alt="Sinfonia Logo"
 			title="Sinfonia Logo"
-			width="320px"
-			height="208px"
+			width="320"
+			height="208"
 		/>
 		<LogoText
 			:class="{
