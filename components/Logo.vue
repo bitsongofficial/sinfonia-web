@@ -1,7 +1,4 @@
 <script lang="ts" setup>
-import sinfoniaLogo from '@/assets/img/sinfonia-logo.svg?url'
-import sinfoniaLogoText from '@/assets/img/sinfonia-logo-text.svg?url'
-
 withDefaults(
 	defineProps<{
 		vertical?: boolean
