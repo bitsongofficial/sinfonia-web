@@ -2,9 +2,6 @@ import { Fantoken } from '@/models'
 import adamToken from '@/assets/img/tokens/adam.jpeg?url'
 import adamClay from '@/assets/audio/adam-clay.mp3?url'
 
-import ldonToken from '@/assets/img/tokens/ldon.jpeg?url'
-import ldon from '@/assets/audio/ldon.mp3?url'
-
 import carolinaMarquezToken from '@/assets/img/tokens/carolina-marquez.jpeg?url'
 import carolinaMarquez from '@/assets/audio/carolina-marquez.mp3?url'
 
@@ -48,12 +45,6 @@ export const fantokens: Fantoken[] = [
 		role: 'Artist',
 		img: adamToken,
 		track: adamClay,
-	},
-	{
-		name: 'LDON',
-		role: 'Artist',
-		img: ldonToken,
-		track: ldon,
 	},
 	{
 		name: 'Carolina Marquez',
